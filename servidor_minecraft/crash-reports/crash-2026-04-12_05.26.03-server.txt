@@ -1,0 +1,1311 @@
+---- Minecraft Crash Report ----
+// There are four lights!
+
+Time: 2026-04-12 05:26:03
+Description: Watching Server
+
+java.lang.Error: ServerHangWatchdog detected that a single server tick took 60.00 seconds (should be max 0.05)
+	at net.minecraft.server.level.ServerChunkCache.m_184021_(ServerChunkCache.java:374) ~[server-1.20.1-20230612.114412-srg.jar%23301!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:cupboard.mixins.json:ChunkLoadDebug,pl:mixin:APP:modernfix-modernfix.mixins.json:bugfix.chunk_deadlock.ServerChunkCache_CurrentLoadingMixin,pl:mixin:A}
+	at net.minecraft.server.level.ServerChunkCache$$Lambda$22237/0x000070cac2a82dc8.accept(Unknown Source) ~[?:?] {}
+	at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?] {re:mixin}
+	at net.minecraft.server.level.ServerChunkCache.m_8490_(ServerChunkCache.java:373) ~[server-1.20.1-20230612.114412-srg.jar%23301!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:cupboard.mixins.json:ChunkLoadDebug,pl:mixin:APP:modernfix-modernfix.mixins.json:bugfix.chunk_deadlock.ServerChunkCache_CurrentLoadingMixin,pl:mixin:A}
+	at net.minecraft.server.level.ServerChunkCache.m_201698_(ServerChunkCache.java:312) ~[server-1.20.1-20230612.114412-srg.jar%23301!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:cupboard.mixins.json:ChunkLoadDebug,pl:mixin:APP:modernfix-modernfix.mixins.json:bugfix.chunk_deadlock.ServerChunkCache_CurrentLoadingMixin,pl:mixin:A}
+	at net.minecraft.server.level.ServerLevel.m_8793_(ServerLevel.java:305) ~[server-1.20.1-20230612.114412-srg.jar%23301!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:cupboard.mixins.json:ServerAddEntityMixin,pl:mixin:APP:undeadnights.mixins.json:ServerWorldMixin,pl:mixin:APP:aether.mixins.json:common.accessor.ServerLevelAccessor,pl:mixin:APP:mixins.insanelib.json:accessor.ServerLevelAccessor,pl:mixin:APP:modernfix-modernfix.mixins.json:perf.cache_strongholds.ServerLevelMixin,pl:mixin:APP:modernfix-modernfix.mixins.json:perf.faster_structure_location.ServerLevelMixin,pl:mixin:APP:citadel.mixins.json:ServerLevelMixin,pl:mixin:APP:glitchcore.mixins.json:MixinServerLevel,pl:mixin:A}
+	at net.minecraft.server.MinecraftServer.m_5703_(MinecraftServer.java:893) ~[server-1.20.1-20230612.114412-srg.jar%23301!/:?] {re:mixin,pl:accesstransformer:B,re:computing_frames,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:modernfix-modernfix.mixins.json:perf.fix_loop_spin_waiting.MinecraftServerMixin,pl:mixin:APP:xaeroworldmap.mixins.json:MixinMinecraftServer,pl:mixin:APP:modernfix-modernfix.mixins.json:perf.dedicated_reload_executor.MinecraftServerMixin,pl:mixin:APP:modernfix-modernfix.mixins.json:core.MinecraftServerMixin,pl:mixin:APP:citadel.mixins.json:MinecraftServerMixin,pl:mixin:APP:balm.mixins.json:MinecraftServerMixin,pl:mixin:APP:otyacraftengine-common.mixins.json:MinecraftServerMixin,pl:mixin:APP:xaerohud.mixins.json:MixinMinecraftServer,pl:mixin:A}
+	at net.minecraft.server.dedicated.DedicatedServer.m_5703_(DedicatedServer.java:283) ~[server-1.20.1-20230612.114412-srg.jar%23301!/:?] {re:mixin,pl:accesstransformer:B,re:computing_frames,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:tombstone.mixins.json:DedicatedServerMixin,pl:mixin:A}
+	at net.minecraft.server.MinecraftServer.m_5705_(MinecraftServer.java:814) ~[server-1.20.1-20230612.114412-srg.jar%23301!/:?] {re:mixin,pl:accesstransformer:B,re:computing_frames,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:modernfix-modernfix.mixins.json:perf.fix_loop_spin_waiting.MinecraftServerMixin,pl:mixin:APP:xaeroworldmap.mixins.json:MixinMinecraftServer,pl:mixin:APP:modernfix-modernfix.mixins.json:perf.dedicated_reload_executor.MinecraftServerMixin,pl:mixin:APP:modernfix-modernfix.mixins.json:core.MinecraftServerMixin,pl:mixin:APP:citadel.mixins.json:MinecraftServerMixin,pl:mixin:APP:balm.mixins.json:MinecraftServerMixin,pl:mixin:APP:otyacraftengine-common.mixins.json:MinecraftServerMixin,pl:mixin:APP:xaerohud.mixins.json:MixinMinecraftServer,pl:mixin:A}
+	at net.minecraft.server.MinecraftServer.m_130011_(MinecraftServer.java:661) ~[server-1.20.1-20230612.114412-srg.jar%23301!/:?] {re:mixin,pl:accesstransformer:B,re:computing_frames,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:modernfix-modernfix.mixins.json:perf.fix_loop_spin_waiting.MinecraftServerMixin,pl:mixin:APP:xaeroworldmap.mixins.json:MixinMinecraftServer,pl:mixin:APP:modernfix-modernfix.mixins.json:perf.dedicated_reload_executor.MinecraftServerMixin,pl:mixin:APP:modernfix-modernfix.mixins.json:core.MinecraftServerMixin,pl:mixin:APP:citadel.mixins.json:MinecraftServerMixin,pl:mixin:APP:balm.mixins.json:MinecraftServerMixin,pl:mixin:APP:otyacraftengine-common.mixins.json:MinecraftServerMixin,pl:mixin:APP:xaerohud.mixins.json:MixinMinecraftServer,pl:mixin:A}
+	at net.minecraft.server.MinecraftServer.m_206580_(MinecraftServer.java:251) ~[server-1.20.1-20230612.114412-srg.jar%23301!/:?] {re:mixin,pl:accesstransformer:B,re:computing_frames,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:modernfix-modernfix.mixins.json:perf.fix_loop_spin_waiting.MinecraftServerMixin,pl:mixin:APP:xaeroworldmap.mixins.json:MixinMinecraftServer,pl:mixin:APP:modernfix-modernfix.mixins.json:perf.dedicated_reload_executor.MinecraftServerMixin,pl:mixin:APP:modernfix-modernfix.mixins.json:core.MinecraftServerMixin,pl:mixin:APP:citadel.mixins.json:MinecraftServerMixin,pl:mixin:APP:balm.mixins.json:MinecraftServerMixin,pl:mixin:APP:otyacraftengine-common.mixins.json:MinecraftServerMixin,pl:mixin:APP:xaerohud.mixins.json:MixinMinecraftServer,pl:mixin:A}
+	at net.minecraft.server.MinecraftServer$$Lambda$19603/0x000070cac2567138.run(Unknown Source) ~[?:?] {}
+	at java.lang.Thread.run(Thread.java:840) ~[?:?] {re:mixin}
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Server Watchdog
+Suspected Mods: NONE
+Stacktrace:
+	at net.minecraft.server.level.ServerChunkCache.m_184021_(ServerChunkCache.java:374) ~[server-1.20.1-20230612.114412-srg.jar%23301!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:cupboard.mixins.json:ChunkLoadDebug,pl:mixin:APP:modernfix-modernfix.mixins.json:bugfix.chunk_deadlock.ServerChunkCache_CurrentLoadingMixin,pl:mixin:A}
+	at net.minecraft.server.level.ServerChunkCache$$Lambda$22237/0x000070cac2a82dc8.accept(Unknown Source) ~[?:?] {}
+	at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?] {re:mixin}
+	at net.minecraft.server.level.ServerChunkCache.m_8490_(ServerChunkCache.java:373) ~[server-1.20.1-20230612.114412-srg.jar%23301!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:cupboard.mixins.json:ChunkLoadDebug,pl:mixin:APP:modernfix-modernfix.mixins.json:bugfix.chunk_deadlock.ServerChunkCache_CurrentLoadingMixin,pl:mixin:A}
+	at net.minecraft.server.level.ServerChunkCache.m_201698_(ServerChunkCache.java:312) ~[server-1.20.1-20230612.114412-srg.jar%23301!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:cupboard.mixins.json:ChunkLoadDebug,pl:mixin:APP:modernfix-modernfix.mixins.json:bugfix.chunk_deadlock.ServerChunkCache_CurrentLoadingMixin,pl:mixin:A}
+	at net.minecraft.server.level.ServerLevel.m_8793_(ServerLevel.java:305) ~[server-1.20.1-20230612.114412-srg.jar%23301!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:cupboard.mixins.json:ServerAddEntityMixin,pl:mixin:APP:undeadnights.mixins.json:ServerWorldMixin,pl:mixin:APP:aether.mixins.json:common.accessor.ServerLevelAccessor,pl:mixin:APP:mixins.insanelib.json:accessor.ServerLevelAccessor,pl:mixin:APP:modernfix-modernfix.mixins.json:perf.cache_strongholds.ServerLevelMixin,pl:mixin:APP:modernfix-modernfix.mixins.json:perf.faster_structure_location.ServerLevelMixin,pl:mixin:APP:citadel.mixins.json:ServerLevelMixin,pl:mixin:APP:glitchcore.mixins.json:MixinServerLevel,pl:mixin:A}
+	at net.minecraft.server.MinecraftServer.m_5703_(MinecraftServer.java:893) ~[server-1.20.1-20230612.114412-srg.jar%23301!/:?] {re:mixin,pl:accesstransformer:B,re:computing_frames,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:modernfix-modernfix.mixins.json:perf.fix_loop_spin_waiting.MinecraftServerMixin,pl:mixin:APP:xaeroworldmap.mixins.json:MixinMinecraftServer,pl:mixin:APP:modernfix-modernfix.mixins.json:perf.dedicated_reload_executor.MinecraftServerMixin,pl:mixin:APP:modernfix-modernfix.mixins.json:core.MinecraftServerMixin,pl:mixin:APP:citadel.mixins.json:MinecraftServerMixin,pl:mixin:APP:balm.mixins.json:MinecraftServerMixin,pl:mixin:APP:otyacraftengine-common.mixins.json:MinecraftServerMixin,pl:mixin:APP:xaerohud.mixins.json:MixinMinecraftServer,pl:mixin:A}
+	at net.minecraft.server.dedicated.DedicatedServer.m_5703_(DedicatedServer.java:283) ~[server-1.20.1-20230612.114412-srg.jar%23301!/:?] {re:mixin,pl:accesstransformer:B,re:computing_frames,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:tombstone.mixins.json:DedicatedServerMixin,pl:mixin:A}
+	at net.minecraft.server.MinecraftServer.m_5705_(MinecraftServer.java:814) ~[server-1.20.1-20230612.114412-srg.jar%23301!/:?] {re:mixin,pl:accesstransformer:B,re:computing_frames,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:modernfix-modernfix.mixins.json:perf.fix_loop_spin_waiting.MinecraftServerMixin,pl:mixin:APP:xaeroworldmap.mixins.json:MixinMinecraftServer,pl:mixin:APP:modernfix-modernfix.mixins.json:perf.dedicated_reload_executor.MinecraftServerMixin,pl:mixin:APP:modernfix-modernfix.mixins.json:core.MinecraftServerMixin,pl:mixin:APP:citadel.mixins.json:MinecraftServerMixin,pl:mixin:APP:balm.mixins.json:MinecraftServerMixin,pl:mixin:APP:otyacraftengine-common.mixins.json:MinecraftServerMixin,pl:mixin:APP:xaerohud.mixins.json:MixinMinecraftServer,pl:mixin:A}
+	at net.minecraft.server.MinecraftServer.m_130011_(MinecraftServer.java:661) ~[server-1.20.1-20230612.114412-srg.jar%23301!/:?] {re:mixin,pl:accesstransformer:B,re:computing_frames,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:modernfix-modernfix.mixins.json:perf.fix_loop_spin_waiting.MinecraftServerMixin,pl:mixin:APP:xaeroworldmap.mixins.json:MixinMinecraftServer,pl:mixin:APP:modernfix-modernfix.mixins.json:perf.dedicated_reload_executor.MinecraftServerMixin,pl:mixin:APP:modernfix-modernfix.mixins.json:core.MinecraftServerMixin,pl:mixin:APP:citadel.mixins.json:MinecraftServerMixin,pl:mixin:APP:balm.mixins.json:MinecraftServerMixin,pl:mixin:APP:otyacraftengine-common.mixins.json:MinecraftServerMixin,pl:mixin:APP:xaerohud.mixins.json:MixinMinecraftServer,pl:mixin:A}
+	at net.minecraft.server.MinecraftServer.m_206580_(MinecraftServer.java:251) ~[server-1.20.1-20230612.114412-srg.jar%23301!/:?] {re:mixin,pl:accesstransformer:B,re:computing_frames,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:modernfix-modernfix.mixins.json:perf.fix_loop_spin_waiting.MinecraftServerMixin,pl:mixin:APP:xaeroworldmap.mixins.json:MixinMinecraftServer,pl:mixin:APP:modernfix-modernfix.mixins.json:perf.dedicated_reload_executor.MinecraftServerMixin,pl:mixin:APP:modernfix-modernfix.mixins.json:core.MinecraftServerMixin,pl:mixin:APP:citadel.mixins.json:MinecraftServerMixin,pl:mixin:APP:balm.mixins.json:MinecraftServerMixin,pl:mixin:APP:otyacraftengine-common.mixins.json:MinecraftServerMixin,pl:mixin:APP:xaerohud.mixins.json:MixinMinecraftServer,pl:mixin:A}
+-- Thread Dump --
+Details:
+	Threads: "Reference Handler" daemon prio=10 Id=2 RUNNABLE
+	at java.base@17.0.18/java.lang.ref.Reference.waitForReferencePendingList(Native Method)
+	at java.base@17.0.18/java.lang.ref.Reference.processPendingReferences(Reference.java:253)
+	at java.base@17.0.18/java.lang.ref.Reference$ReferenceHandler.run(Reference.java:215)
+
+
+"Finalizer" daemon prio=8 Id=3 WAITING on java.lang.ref.ReferenceQueue$Lock@68c9c684
+	at java.base@17.0.18/java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.ref.ReferenceQueue$Lock@68c9c684
+	at java.base@17.0.18/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+	at java.base@17.0.18/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:176)
+	at java.base@17.0.18/java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:172)
+
+
+"Signal Dispatcher" daemon prio=9 Id=4 RUNNABLE
+
+
+"Common-Cleaner" daemon prio=8 Id=11 TIMED_WAITING on java.lang.ref.ReferenceQueue$Lock@660e35ed
+	at java.base@17.0.18/java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.ref.ReferenceQueue$Lock@660e35ed
+	at java.base@17.0.18/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+	at java.base@17.0.18/jdk.internal.ref.CleanerImpl.run(CleanerImpl.java:140)
+	at java.base@17.0.18/java.lang.Thread.run(Thread.java:840)
+	at java.base@17.0.18/jdk.internal.misc.InnocuousThread.run(InnocuousThread.java:162)
+
+
+"Notification Thread" daemon prio=9 Id=12 RUNNABLE
+
+
+"Thread-0" daemon prio=5 Id=20 TIMED_WAITING
+	at java.base@17.0.18/jdk.internal.misc.Unsafe.park(Native Method)
+	at java.base@17.0.18/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:376)
+	at TRANSFORMER/modernfix@5.26.2+mc1.20.1/org.embeddedt.modernfix.forge.config.NightConfigWatchThrottler$1$1.iterator(NightConfigWatchThrottler.java:47)
+	at MC-BOOTSTRAP/com.electronwill.nightconfig.core@3.6.4/com.electronwill.nightconfig.core.file.FileWatcher$WatcherThread.run(FileWatcher.java:162)
+
+
+"DH-Log Ticker Thread[0]" daemon prio=5 Id=21 TIMED_WAITING
+	at java.base@17.0.18/java.lang.Thread.sleep(Native Method)
+	at TRANSFORMER/distanthorizons@2.4.5-b/com.seibel.distanthorizons.core.logging.DhLogger.runTickerLoop(DhLogger.java:349)
+	at TRANSFORMER/distanthorizons@2.4.5-b/com.seibel.distanthorizons.core.logging.DhLogger.lambda$static$0(DhLogger.java:93)
+	at TRANSFORMER/distanthorizons@2.4.5-b/com.seibel.distanthorizons.core.logging.DhLogger$$Lambda$1084/0x000070cac04cb388.run(Unknown Source)
+	at java.base@17.0.18/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base@17.0.18/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base@17.0.18/java.lang.Thread.run(Thread.java:840)
+
+	Number of locked synchronizers = 1
+	- java.util.concurrent.ThreadPoolExecutor$Worker@686fb58a
+
+
+"Timer hack thread" daemon prio=5 Id=22 TIMED_WAITING
+	at java.base@17.0.18/java.lang.Thread.sleep(Native Method)
+	at TRANSFORMER/minecraft@1.20.1/net.minecraft.Util$9.run(Util.java:672)
+
+
+"FileSystemWatchService" daemon prio=5 Id=27 RUNNABLE (in native)
+	at java.base@17.0.18/sun.nio.fs.LinuxWatchService.poll(Native Method)
+	at java.base@17.0.18/sun.nio.fs.LinuxWatchService$Poller.run(LinuxWatchService.java:314)
+	at java.base@17.0.18/java.lang.Thread.run(Thread.java:840)
+
+
+"DFU cleaning thread" daemon prio=1 Id=31 TIMED_WAITING
+	at java.base@17.0.18/jdk.internal.misc.Unsafe.park(Native Method)
+	at java.base@17.0.18/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:376)
+	at TRANSFORMER/modernfix@5.26.2+mc1.20.1/org.embeddedt.modernfix.dfu.DFUBlaster$CleanerThread.run(DFUBlaster.java:61)
+
+
+"FileSystemWatchService" daemon prio=5 Id=32 RUNNABLE (in native)
+	at java.base@17.0.18/sun.nio.fs.LinuxWatchService.poll(Native Method)
+	at java.base@17.0.18/sun.nio.fs.LinuxWatchService$Poller.run(LinuxWatchService.java:314)
+	at java.base@17.0.18/java.lang.Thread.run(Thread.java:840)
+
+
+"FileSystemWatchService" daemon prio=5 Id=33 RUNNABLE (in native)
+	at java.base@17.0.18/sun.nio.fs.LinuxWatchService.poll(Native Method)
+	at java.base@17.0.18/sun.nio.fs.LinuxWatchService$Poller.run(LinuxWatchService.java:314)
+	at java.base@17.0.18/java.lang.Thread.run(Thread.java:840)
+
+
+"FileSystemWatchService" daemon prio=5 Id=34 RUNNABLE (in native)
+	at java.base@17.0.18/sun.nio.fs.LinuxWatchService.poll(Native Method)
+	at java.base@17.0.18/sun.nio.fs.LinuxWatchService$Poller.run(LinuxWatchService.java:314)
+	at java.base@17.0.18/java.lang.Thread.run(Thread.java:840)
+
+
+"FileSystemWatchService" daemon prio=5 Id=35 RUNNABLE (in native)
+	at java.base@17.0.18/sun.nio.fs.LinuxWatchService.poll(Native Method)
+	at java.base@17.0.18/sun.nio.fs.LinuxWatchService$Poller.run(LinuxWatchService.java:314)
+	at java.base@17.0.18/java.lang.Thread.run(Thread.java:840)
+
+
+"Ingredient reference clearing thread" daemon prio=7 Id=36 WAITING on java.lang.ref.ReferenceQueue$Lock@6231adf4
+	at java.base@17.0.18/java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.ref.ReferenceQueue$Lock@6231adf4
+	at java.base@17.0.18/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+	at java.base@17.0.18/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:176)
+	at TRANSFORMER/modernfix@5.26.2+mc1.20.1/org.embeddedt.modernfix.forge.recipe.IngredientItemStacksSoftReference.clearReferences(IngredientItemStacksSoftReference.java:31)
+	at TRANSFORMER/modernfix@5.26.2+mc1.20.1/org.embeddedt.modernfix.forge.recipe.IngredientItemStacksSoftReference$$Lambda$15925/0x000070cac213a7d8.run(Unknown Source)
+	at java.base@17.0.18/java.lang.Thread.run(Thread.java:840)
+
+
+"ConfigSaver" daemon prio=5 Id=39 WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@27333fd6
+	at java.base@17.0.18/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@27333fd6
+	at java.base@17.0.18/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+	at java.base@17.0.18/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
+	at java.base@17.0.18/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3465)
+	at java.base@17.0.18/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3436)
+	at java.base@17.0.18/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1630)
+	at java.base@17.0.18/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+	at java.base@17.0.18/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+	...
+
+
+"luckperms-worker-0" daemon prio=5 Id=40 WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@1e83052
+	at java.base@17.0.18/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@1e83052
+	at java.base@17.0.18/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+	at java.base@17.0.18/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
+	at java.base@17.0.18/java.util.concurrent.ForkJoinPool.compensatedBlock(ForkJoinPool.java:3451)
+	at java.base@17.0.18/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3434)
+	at java.base@17.0.18/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1630)
+	at java.base@17.0.18/java.util.concurrent.LinkedBlockingDeque.takeFirst(LinkedBlockingDeque.java:485)
+	at java.base@17.0.18/java.util.concurrent.LinkedBlockingDeque.take(LinkedBlockingDeque.java:673)
+	...
+
+
+"luckperms-worker-1" daemon prio=5 Id=41 TIMED_WAITING on java.util.concurrent.ForkJoinPool@16dedcdf
+	at java.base@17.0.18/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.ForkJoinPool@16dedcdf
+	at java.base@17.0.18/java.util.concurrent.locks.LockSupport.parkUntil(LockSupport.java:410)
+	at java.base@17.0.18/java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:1726)
+	at java.base@17.0.18/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1623)
+	at java.base@17.0.18/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+
+
+"luckperms-worker-2" daemon prio=5 Id=42 WAITING on java.util.concurrent.ForkJoinPool@16dedcdf
+	at java.base@17.0.18/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.ForkJoinPool@16dedcdf
+	at java.base@17.0.18/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+	at java.base@17.0.18/java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:1724)
+	at java.base@17.0.18/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1623)
+	at java.base@17.0.18/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+
+
+"ConfigSaver" daemon prio=5 Id=43 WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@79ef8dfd
+	at java.base@17.0.18/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@79ef8dfd
+	at java.base@17.0.18/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+	at java.base@17.0.18/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
+	at java.base@17.0.18/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3465)
+	at java.base@17.0.18/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3436)
+	at java.base@17.0.18/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1630)
+	at java.base@17.0.18/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+	at java.base@17.0.18/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+	...
+
+
+"luckperms-scheduler" prio=5 Id=46 TIMED_WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@471cc099
+	at java.base@17.0.18/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@471cc099
+	at java.base@17.0.18/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+	at java.base@17.0.18/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1679)
+	at java.base@17.0.18/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+	at java.base@17.0.18/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+	at java.base@17.0.18/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+	at java.base@17.0.18/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+	at java.base@17.0.18/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	...
+
+
+"Yggdrasil Key Fetcher" daemon prio=5 Id=50 TIMED_WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@7b60288
+	at java.base@17.0.18/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@7b60288
+	at java.base@17.0.18/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+	at java.base@17.0.18/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1679)
+	at java.base@17.0.18/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+	at java.base@17.0.18/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+	at java.base@17.0.18/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+	at java.base@17.0.18/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+	at java.base@17.0.18/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	...
+
+
+"FileSystemWatchService" daemon prio=5 Id=52 RUNNABLE (in native)
+	at java.base@17.0.18/sun.nio.fs.LinuxWatchService.poll(Native Method)
+	at java.base@17.0.18/sun.nio.fs.LinuxWatchService$Poller.run(LinuxWatchService.java:314)
+	at java.base@17.0.18/java.lang.Thread.run(Thread.java:840)
+
+
+"Server thread" prio=5 Id=59 RUNNABLE
+	at TRANSFORMER/minecraft@1.20.1/net.minecraft.server.level.ServerChunkCache.m_184021_(ServerChunkCache.java:374)
+	at TRANSFORMER/minecraft@1.20.1/net.minecraft.server.level.ServerChunkCache$$Lambda$22237/0x000070cac2a82dc8.accept(Unknown Source)
+	at java.base@17.0.18/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at TRANSFORMER/minecraft@1.20.1/net.minecraft.server.level.ServerChunkCache.m_8490_(ServerChunkCache.java:373)
+	at TRANSFORMER/minecraft@1.20.1/net.minecraft.server.level.ServerChunkCache.m_201698_(ServerChunkCache.java:312)
+	at TRANSFORMER/minecraft@1.20.1/net.minecraft.server.level.ServerLevel.m_8793_(ServerLevel.java:305)
+	at TRANSFORMER/minecraft@1.20.1/net.minecraft.server.MinecraftServer.m_5703_(MinecraftServer.java:893)
+	at TRANSFORMER/minecraft@1.20.1/net.minecraft.server.dedicated.DedicatedServer.m_5703_(DedicatedServer.java:283)
+	...
+
+
+"Server console handler" daemon prio=5 Id=61 RUNNABLE
+	at java.base@17.0.18/java.io.FileInputStream.read0(Native Method)
+	at java.base@17.0.18/java.io.FileInputStream.read(FileInputStream.java:228)
+	at MC-BOOTSTRAP/jline.terminal@3.12.1/org.jline.terminal.impl.AbstractPty$PtyInputStream.read(AbstractPty.java:73)
+	at MC-BOOTSTRAP/jline.terminal@3.12.1/org.jline.utils.NonBlockingInputStream.read(NonBlockingInputStream.java:62)
+	at MC-BOOTSTRAP/jline.terminal@3.12.1/org.jline.utils.NonBlocking$NonBlockingInputStreamReader.read(NonBlocking.java:168)
+	at MC-BOOTSTRAP/jline.terminal@3.12.1/org.jline.utils.NonBlockingReader.read(NonBlockingReader.java:57)
+	at MC-BOOTSTRAP/jline.reader@3.12.1/org.jline.keymap.BindingReader.readCharacter(BindingReader.java:133)
+	at MC-BOOTSTRAP/jline.reader@3.12.1/org.jline.keymap.BindingReader.readBinding(BindingReader.java:110)
+	...
+
+
+"DestroyJavaVM" prio=5 Id=62 RUNNABLE
+
+
+"Netty Epoll Server IO #0" daemon prio=5 Id=63 RUNNABLE (in native)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.82.Final/io.netty.channel.epoll.Native.epollWait(Native Method)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.82.Final/io.netty.channel.epoll.Native.epollWait(Native.java:209)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.82.Final/io.netty.channel.epoll.Native.epollWait(Native.java:202)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.82.Final/io.netty.channel.epoll.EpollEventLoop.epollWaitNoTimerChange(EpollEventLoop.java:306)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.82.Final/io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:363)
+	at MC-BOOTSTRAP/io.netty.common@4.1.82.Final/io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at MC-BOOTSTRAP/io.netty.common@4.1.82.Final/io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at java.base@17.0.18/java.lang.Thread.run(Thread.java:840)
+
+
+"FileSystemWatchService" daemon prio=5 Id=64 RUNNABLE (in native)
+	at java.base@17.0.18/sun.nio.fs.LinuxWatchService.poll(Native Method)
+	at java.base@17.0.18/sun.nio.fs.LinuxWatchService$Poller.run(LinuxWatchService.java:314)
+	at java.base@17.0.18/java.lang.Thread.run(Thread.java:840)
+
+
+"FileSystemWatchService" daemon prio=5 Id=65 RUNNABLE (in native)
+	at java.base@17.0.18/sun.nio.fs.LinuxWatchService.poll(Native Method)
+	at java.base@17.0.18/sun.nio.fs.LinuxWatchService$Poller.run(LinuxWatchService.java:314)
+	at java.base@17.0.18/java.lang.Thread.run(Thread.java:840)
+
+
+"FileSystemWatchService" daemon prio=5 Id=66 RUNNABLE (in native)
+	at java.base@17.0.18/sun.nio.fs.LinuxWatchService.poll(Native Method)
+	at java.base@17.0.18/sun.nio.fs.LinuxWatchService$Poller.run(LinuxWatchService.java:314)
+	at java.base@17.0.18/java.lang.Thread.run(Thread.java:840)
+
+
+"luckperms-worker-3" daemon prio=5 Id=67 WAITING on java.util.concurrent.ForkJoinPool@16dedcdf
+	at java.base@17.0.18/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.ForkJoinPool@16dedcdf
+	at java.base@17.0.18/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+	at java.base@17.0.18/java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:1724)
+	at java.base@17.0.18/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1623)
+	at java.base@17.0.18/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+
+
+"MVStore background writer /workspaces/ideal-disco/servidor_minecraft/config/luckperms/luckperms-h2-v2.mv.db" daemon prio=5 Id=73 TIMED_WAITING on java.lang.Object@676e0e85
+	at java.base@17.0.18/java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.Object@676e0e85
+	at org.h2.mvstore.MVStore$BackgroundWriterThread.run(MVStore.java:3768)
+
+
+"DH-ApplyConfigPresetTimer" daemon prio=5 Id=75 WAITING on java.util.TaskQueue@62ebe7f0
+	at java.base@17.0.18/java.lang.Object.wait(Native Method)
+	-  waiting on java.util.TaskQueue@62ebe7f0
+	at java.base@17.0.18/java.lang.Object.wait(Object.java:338)
+	at java.base@17.0.18/java.util.TimerThread.mainLoop(Timer.java:537)
+	at java.base@17.0.18/java.util.TimerThread.run(Timer.java:516)
+
+
+"DH-ApplyConfigPresetTimer" daemon prio=5 Id=76 WAITING on java.util.TaskQueue@4352fb3c
+	at java.base@17.0.18/java.lang.Object.wait(Native Method)
+	-  waiting on java.util.TaskQueue@4352fb3c
+	at java.base@17.0.18/java.lang.Object.wait(Object.java:338)
+	at java.base@17.0.18/java.util.TimerThread.mainLoop(Timer.java:537)
+	at java.base@17.0.18/java.util.TimerThread.run(Timer.java:516)
+
+
+"H2-serialization" daemon prio=5 Id=77 WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@74c7039c
+	at java.base@17.0.18/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@74c7039c
+	at java.base@17.0.18/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+	at java.base@17.0.18/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
+	at java.base@17.0.18/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3465)
+	at java.base@17.0.18/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3436)
+	at java.base@17.0.18/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1630)
+	at java.base@17.0.18/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+	at java.base@17.0.18/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+	...
+
+
+"H2-save" daemon prio=5 Id=78 WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@63ca21a7
+	at java.base@17.0.18/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@63ca21a7
+	at java.base@17.0.18/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+	at java.base@17.0.18/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
+	at java.base@17.0.18/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3465)
+	at java.base@17.0.18/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3436)
+	at java.base@17.0.18/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1630)
+	at java.base@17.0.18/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+	at java.base@17.0.18/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+	...
+
+
+"luckperms-worker-4" daemon prio=5 Id=79 WAITING on java.util.concurrent.ForkJoinPool@16dedcdf
+	at java.base@17.0.18/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.ForkJoinPool@16dedcdf
+	at java.base@17.0.18/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+	at java.base@17.0.18/java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:1724)
+	at java.base@17.0.18/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1623)
+	at java.base@17.0.18/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+
+
+"DH-delayed save cache cleaner Thread[0]" daemon prio=5 Id=83 TIMED_WAITING
+	at java.base@17.0.18/java.lang.Thread.sleep(Native Method)
+	at TRANSFORMER/distanthorizons@2.4.5-b/com.seibel.distanthorizons.core.file.fullDatafile.DelayedFullDataSourceSaveCache.runCleanupLoop(DelayedFullDataSourceSaveCache.java:197)
+	at TRANSFORMER/distanthorizons@2.4.5-b/com.seibel.distanthorizons.core.file.fullDatafile.DelayedFullDataSourceSaveCache.lambda$static$0(DelayedFullDataSourceSaveCache.java:54)
+	at TRANSFORMER/distanthorizons@2.4.5-b/com.seibel.distanthorizons.core.file.fullDatafile.DelayedFullDataSourceSaveCache$$Lambda$20496/0x000070cac283cc48.run(Unknown Source)
+	at java.base@17.0.18/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base@17.0.18/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base@17.0.18/java.lang.Thread.run(Thread.java:840)
+
+	Number of locked synchronizers = 1
+	- java.util.concurrent.ThreadPoolExecutor$Worker@5a21192c
+
+
+"DH-Phantom Array Recycler Thread[0]" daemon prio=5 Id=84 TIMED_WAITING
+	at java.base@17.0.18/java.lang.Thread.sleep(Native Method)
+	at TRANSFORMER/distanthorizons@2.4.5-b/com.seibel.distanthorizons.core.pooling.PhantomArrayListPool.runPhantomReferenceCleanupLoop(PhantomArrayListPool.java:265)
+	at TRANSFORMER/distanthorizons@2.4.5-b/com.seibel.distanthorizons.core.pooling.PhantomArrayListPool.lambda$static$0(PhantomArrayListPool.java:130)
+	at TRANSFORMER/distanthorizons@2.4.5-b/com.seibel.distanthorizons.core.pooling.PhantomArrayListPool$$Lambda$20499/0x000070cac283eaf0.run(Unknown Source)
+	at java.base@17.0.18/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base@17.0.18/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base@17.0.18/java.lang.Thread.run(Thread.java:840)
+
+	Number of locked synchronizers = 1
+	- java.util.concurrent.ThreadPoolExecutor$Worker@41dead7a
+
+
+"DH-Update Propagate Queue [minecraft:overworld] Thread[0]" prio=5 Id=85 TIMED_WAITING
+	at java.base@17.0.18/java.lang.Thread.sleep(Native Method)
+	at TRANSFORMER/distanthorizons@2.4.5-b/com.seibel.distanthorizons.core.file.fullDatafile.V2.FullDataUpdatePropagatorV2.runUpdateQueue(FullDataUpdatePropagatorV2.java:96)
+	at TRANSFORMER/distanthorizons@2.4.5-b/com.seibel.distanthorizons.core.file.fullDatafile.V2.FullDataUpdatePropagatorV2$$Lambda$20518/0x000070cac28557d0.run(Unknown Source)
+	at java.base@17.0.18/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base@17.0.18/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base@17.0.18/java.lang.Thread.run(Thread.java:840)
+
+	Number of locked synchronizers = 1
+	- java.util.concurrent.ThreadPoolExecutor$Worker@3808d3a5
+
+
+"DH-Full Data Migration Thread[0]" prio=5 Id=86 WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@5e238e49
+	at java.base@17.0.18/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@5e238e49
+	at java.base@17.0.18/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+	at java.base@17.0.18/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
+	at java.base@17.0.18/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3465)
+	at java.base@17.0.18/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3436)
+	at java.base@17.0.18/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1630)
+	at java.base@17.0.18/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+	at java.base@17.0.18/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+	...
+
+
+"DH-Request Module Ticker [minecraft:overworld] Thread[0]" daemon prio=5 Id=87 TIMED_WAITING
+	at java.base@17.0.18/java.lang.Thread.sleep(Native Method)
+	at TRANSFORMER/distanthorizons@2.4.5-b/com.seibel.distanthorizons.core.level.LodRequestModule.tickLoop(LodRequestModule.java:95)
+	at TRANSFORMER/distanthorizons@2.4.5-b/com.seibel.distanthorizons.core.level.LodRequestModule$$Lambda$20522/0x000070cac28578c8.run(Unknown Source)
+	at java.base@17.0.18/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base@17.0.18/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base@17.0.18/java.lang.Thread.run(Thread.java:840)
+
+	Number of locked synchronizers = 1
+	- java.util.concurrent.ThreadPoolExecutor$Worker@3a334195
+
+
+"DH-ChunkSaveIgnoreTimer" daemon prio=5 Id=88 WAITING on java.util.TaskQueue@afc05aa
+	at java.base@17.0.18/java.lang.Object.wait(Native Method)
+	-  waiting on java.util.TaskQueue@afc05aa
+	at java.base@17.0.18/java.lang.Object.wait(Object.java:338)
+	at java.base@17.0.18/java.util.TimerThread.mainLoop(Timer.java:537)
+	at java.base@17.0.18/java.util.TimerThread.run(Timer.java:516)
+
+
+"DH-ChunkSaveIgnoreTimer" daemon prio=5 Id=89 WAITING on java.util.TaskQueue@46eb2c8a
+	at java.base@17.0.18/java.lang.Object.wait(Native Method)
+	-  waiting on java.util.TaskQueue@46eb2c8a
+	at java.base@17.0.18/java.lang.Object.wait(Object.java:338)
+	at java.base@17.0.18/java.util.TimerThread.mainLoop(Timer.java:537)
+	at java.base@17.0.18/java.util.TimerThread.run(Timer.java:516)
+
+
+"DH-DataSource Request Ticker [minecraft:overworld] Thread[0]" daemon prio=5 Id=90 TIMED_WAITING
+	at java.base@17.0.18/java.lang.Thread.sleep(Native Method)
+	at TRANSFORMER/distanthorizons@2.4.5-b/com.seibel.distanthorizons.core.multiplayer.server.FullDataSourceRequestHandler.tickLoop(FullDataSourceRequestHandler.java:311)
+	at TRANSFORMER/distanthorizons@2.4.5-b/com.seibel.distanthorizons.core.multiplayer.server.FullDataSourceRequestHandler$$Lambda$20537/0x000070cac285f200.run(Unknown Source)
+	at java.base@17.0.18/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base@17.0.18/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base@17.0.18/java.lang.Thread.run(Thread.java:840)
+
+	Number of locked synchronizers = 1
+	- java.util.concurrent.ThreadPoolExecutor$Worker@43a4886d
+
+
+"DH-World Gen Queue Thread[0]" prio=5 Id=91 WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@749efae9
+	at java.base@17.0.18/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@749efae9
+	at java.base@17.0.18/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+	at java.base@17.0.18/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
+	at java.base@17.0.18/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3465)
+	at java.base@17.0.18/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3436)
+	at java.base@17.0.18/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1630)
+	at java.base@17.0.18/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+	at java.base@17.0.18/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+	...
+
+
+"DH-World Gen Progress Updater Thread[0]" daemon prio=5 Id=92 TIMED_WAITING
+	at java.base@17.0.18/java.lang.Thread.sleep(Native Method)
+	at TRANSFORMER/distanthorizons@2.4.5-b/com.seibel.distanthorizons.core.level.LodRequestModule$AbstractLodRequestState.lambda$startProgressUpdateThread$0(LodRequestModule.java:284)
+	at TRANSFORMER/distanthorizons@2.4.5-b/com.seibel.distanthorizons.core.level.LodRequestModule$AbstractLodRequestState$$Lambda$20564/0x000070cac28661e8.run(Unknown Source)
+	at java.base@17.0.18/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base@17.0.18/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base@17.0.18/java.lang.Thread.run(Thread.java:840)
+
+	Number of locked synchronizers = 1
+	- java.util.concurrent.ThreadPoolExecutor$Worker@75519ea6
+
+
+"DH-RenderCacheClearConfigTimer" daemon prio=5 Id=98 WAITING on java.util.TaskQueue@360d73f5
+	at java.base@17.0.18/java.lang.Object.wait(Native Method)
+	-  waiting on java.util.TaskQueue@360d73f5
+	at java.base@17.0.18/java.lang.Object.wait(Object.java:338)
+	at java.base@17.0.18/java.util.TimerThread.mainLoop(Timer.java:537)
+	at java.base@17.0.18/java.util.TimerThread.run(Timer.java:516)
+
+
+"DH-LOD Builder Thread[0]" prio=5 Id=105 WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@5cb6f1cb
+	at java.base@17.0.18/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@5cb6f1cb
+	at java.base@17.0.18/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+	at java.base@17.0.18/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
+	at java.base@17.0.18/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3465)
+	at java.base@17.0.18/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3436)
+	at java.base@17.0.18/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1630)
+	at java.base@17.0.18/java.util.concurrent.ArrayBlockingQueue.take(ArrayBlockingQueue.java:420)
+	at java.base@17.0.18/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+	...
+
+
+"DH-Update Propagate Queue [aether:the_aether] Thread[0]" prio=5 Id=106 TIMED_WAITING
+	at java.base@17.0.18/java.lang.Thread.sleep(Native Method)
+	at TRANSFORMER/distanthorizons@2.4.5-b/com.seibel.distanthorizons.core.file.fullDatafile.V2.FullDataUpdatePropagatorV2.runUpdateQueue(FullDataUpdatePropagatorV2.java:96)
+	at TRANSFORMER/distanthorizons@2.4.5-b/com.seibel.distanthorizons.core.file.fullDatafile.V2.FullDataUpdatePropagatorV2$$Lambda$20518/0x000070cac28557d0.run(Unknown Source)
+	at java.base@17.0.18/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base@17.0.18/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base@17.0.18/java.lang.Thread.run(Thread.java:840)
+
+	Number of locked synchronizers = 1
+	- java.util.concurrent.ThreadPoolExecutor$Worker@16f113cb
+
+
+"DH-Request Module Ticker [aether:the_aether] Thread[0]" daemon prio=5 Id=107 TIMED_WAITING
+	at java.base@17.0.18/java.lang.Thread.sleep(Native Method)
+	at TRANSFORMER/distanthorizons@2.4.5-b/com.seibel.distanthorizons.core.level.LodRequestModule.tickLoop(LodRequestModule.java:95)
+	at TRANSFORMER/distanthorizons@2.4.5-b/com.seibel.distanthorizons.core.level.LodRequestModule$$Lambda$20522/0x000070cac28578c8.run(Unknown Source)
+	at java.base@17.0.18/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base@17.0.18/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base@17.0.18/java.lang.Thread.run(Thread.java:840)
+
+	Number of locked synchronizers = 1
+	- java.util.concurrent.ThreadPoolExecutor$Worker@7469731f
+
+
+"DH-ChunkSaveIgnoreTimer" daemon prio=5 Id=108 WAITING on java.util.TaskQueue@432609ab
+	at java.base@17.0.18/java.lang.Object.wait(Native Method)
+	-  waiting on java.util.TaskQueue@432609ab
+	at java.base@17.0.18/java.lang.Object.wait(Object.java:338)
+	at java.base@17.0.18/java.util.TimerThread.mainLoop(Timer.java:537)
+	at java.base@17.0.18/java.util.TimerThread.run(Timer.java:516)
+
+
+"DH-ChunkSaveIgnoreTimer" daemon prio=5 Id=109 WAITING on java.util.TaskQueue@406cfa94
+	at java.base@17.0.18/java.lang.Object.wait(Native Method)
+	-  waiting on java.util.TaskQueue@406cfa94
+	at java.base@17.0.18/java.lang.Object.wait(Object.java:338)
+	at java.base@17.0.18/java.util.TimerThread.mainLoop(Timer.java:537)
+	at java.base@17.0.18/java.util.TimerThread.run(Timer.java:516)
+
+
+"DH-World Gen Queue Thread[0]" prio=5 Id=110 WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@1da3bbb7
+	at java.base@17.0.18/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@1da3bbb7
+	at java.base@17.0.18/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+	at java.base@17.0.18/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
+	at java.base@17.0.18/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3465)
+	at java.base@17.0.18/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3436)
+	at java.base@17.0.18/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1630)
+	at java.base@17.0.18/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+	at java.base@17.0.18/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+	...
+
+
+"DH-DataSource Request Ticker [aether:the_aether] Thread[0]" daemon prio=5 Id=111 TIMED_WAITING
+	at java.base@17.0.18/java.lang.Thread.sleep(Native Method)
+	at TRANSFORMER/distanthorizons@2.4.5-b/com.seibel.distanthorizons.core.multiplayer.server.FullDataSourceRequestHandler.tickLoop(FullDataSourceRequestHandler.java:311)
+	at TRANSFORMER/distanthorizons@2.4.5-b/com.seibel.distanthorizons.core.multiplayer.server.FullDataSourceRequestHandler$$Lambda$20537/0x000070cac285f200.run(Unknown Source)
+	at java.base@17.0.18/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base@17.0.18/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base@17.0.18/java.lang.Thread.run(Thread.java:840)
+
+	Number of locked synchronizers = 1
+	- java.util.concurrent.ThreadPoolExecutor$Worker@460f2788
+
+
+"DH-Update Propagate Queue [minecraft:the_nether] Thread[0]" prio=5 Id=112 TIMED_WAITING
+	at java.base@17.0.18/java.lang.Thread.sleep(Native Method)
+	at TRANSFORMER/distanthorizons@2.4.5-b/com.seibel.distanthorizons.core.file.fullDatafile.V2.FullDataUpdatePropagatorV2.runUpdateQueue(FullDataUpdatePropagatorV2.java:96)
+	at TRANSFORMER/distanthorizons@2.4.5-b/com.seibel.distanthorizons.core.file.fullDatafile.V2.FullDataUpdatePropagatorV2$$Lambda$20518/0x000070cac28557d0.run(Unknown Source)
+	at java.base@17.0.18/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base@17.0.18/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base@17.0.18/java.lang.Thread.run(Thread.java:840)
+
+	Number of locked synchronizers = 1
+	- java.util.concurrent.ThreadPoolExecutor$Worker@4ab5dd1f
+
+
+"DH-Request Module Ticker [minecraft:the_nether] Thread[0]" daemon prio=5 Id=113 TIMED_WAITING
+	at java.base@17.0.18/java.lang.Thread.sleep(Native Method)
+	at TRANSFORMER/distanthorizons@2.4.5-b/com.seibel.distanthorizons.core.level.LodRequestModule.tickLoop(LodRequestModule.java:95)
+	at TRANSFORMER/distanthorizons@2.4.5-b/com.seibel.distanthorizons.core.level.LodRequestModule$$Lambda$20522/0x000070cac28578c8.run(Unknown Source)
+	at java.base@17.0.18/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base@17.0.18/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base@17.0.18/java.lang.Thread.run(Thread.java:840)
+
+	Number of locked synchronizers = 1
+	- java.util.concurrent.ThreadPoolExecutor$Worker@3a854ba8
+
+
+"DH-DataSource Request Ticker [minecraft:the_nether] Thread[0]" daemon prio=5 Id=114 TIMED_WAITING
+	at java.base@17.0.18/java.lang.Thread.sleep(Native Method)
+	at TRANSFORMER/distanthorizons@2.4.5-b/com.seibel.distanthorizons.core.multiplayer.server.FullDataSourceRequestHandler.tickLoop(FullDataSourceRequestHandler.java:311)
+	at TRANSFORMER/distanthorizons@2.4.5-b/com.seibel.distanthorizons.core.multiplayer.server.FullDataSourceRequestHandler$$Lambda$20537/0x000070cac285f200.run(Unknown Source)
+	at java.base@17.0.18/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base@17.0.18/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base@17.0.18/java.lang.Thread.run(Thread.java:840)
+
+	Number of locked synchronizers = 1
+	- java.util.concurrent.ThreadPoolExecutor$Worker@6f5f90d7
+
+
+"DH-ChunkSaveIgnoreTimer" daemon prio=5 Id=115 WAITING on java.util.TaskQueue@76702961
+	at java.base@17.0.18/java.lang.Object.wait(Native Method)
+	-  waiting on java.util.TaskQueue@76702961
+	at java.base@17.0.18/java.lang.Object.wait(Object.java:338)
+	at java.base@17.0.18/java.util.TimerThread.mainLoop(Timer.java:537)
+	at java.base@17.0.18/java.util.TimerThread.run(Timer.java:516)
+
+
+"DH-ChunkSaveIgnoreTimer" daemon prio=5 Id=116 WAITING on java.util.TaskQueue@5680d55
+	at java.base@17.0.18/java.lang.Object.wait(Native Method)
+	-  waiting on java.util.TaskQueue@5680d55
+	at java.base@17.0.18/java.lang.Object.wait(Object.java:338)
+	at java.base@17.0.18/java.util.TimerThread.mainLoop(Timer.java:537)
+	at java.base@17.0.18/java.util.TimerThread.run(Timer.java:516)
+
+
+"DH-World Gen Queue Thread[0]" prio=5 Id=117 WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@22f7ff36
+	at java.base@17.0.18/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@22f7ff36
+	at java.base@17.0.18/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+	at java.base@17.0.18/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
+	at java.base@17.0.18/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3465)
+	at java.base@17.0.18/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3436)
+	at java.base@17.0.18/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1630)
+	at java.base@17.0.18/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+	at java.base@17.0.18/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+	...
+
+
+"DH-Update Propagate Queue [minecraft:the_end] Thread[0]" prio=5 Id=118 TIMED_WAITING
+	at java.base@17.0.18/java.lang.Thread.sleep(Native Method)
+	at TRANSFORMER/distanthorizons@2.4.5-b/com.seibel.distanthorizons.core.file.fullDatafile.V2.FullDataUpdatePropagatorV2.runUpdateQueue(FullDataUpdatePropagatorV2.java:96)
+	at TRANSFORMER/distanthorizons@2.4.5-b/com.seibel.distanthorizons.core.file.fullDatafile.V2.FullDataUpdatePropagatorV2$$Lambda$20518/0x000070cac28557d0.run(Unknown Source)
+	at java.base@17.0.18/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base@17.0.18/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base@17.0.18/java.lang.Thread.run(Thread.java:840)
+
+	Number of locked synchronizers = 1
+	- java.util.concurrent.ThreadPoolExecutor$Worker@2aea47ef
+
+
+"DH-Request Module Ticker [minecraft:the_end] Thread[0]" daemon prio=5 Id=119 TIMED_WAITING
+	at java.base@17.0.18/java.lang.Thread.sleep(Native Method)
+	at TRANSFORMER/distanthorizons@2.4.5-b/com.seibel.distanthorizons.core.level.LodRequestModule.tickLoop(LodRequestModule.java:95)
+	at TRANSFORMER/distanthorizons@2.4.5-b/com.seibel.distanthorizons.core.level.LodRequestModule$$Lambda$20522/0x000070cac28578c8.run(Unknown Source)
+	at java.base@17.0.18/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base@17.0.18/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base@17.0.18/java.lang.Thread.run(Thread.java:840)
+
+	Number of locked synchronizers = 1
+	- java.util.concurrent.ThreadPoolExecutor$Worker@80ab76b
+
+
+"DH-ChunkSaveIgnoreTimer" daemon prio=5 Id=120 WAITING on java.util.TaskQueue@228996dc
+	at java.base@17.0.18/java.lang.Object.wait(Native Method)
+	-  waiting on java.util.TaskQueue@228996dc
+	at java.base@17.0.18/java.lang.Object.wait(Object.java:338)
+	at java.base@17.0.18/java.util.TimerThread.mainLoop(Timer.java:537)
+	at java.base@17.0.18/java.util.TimerThread.run(Timer.java:516)
+
+
+"DH-ChunkSaveIgnoreTimer" daemon prio=5 Id=121 WAITING on java.util.TaskQueue@55c598cd
+	at java.base@17.0.18/java.lang.Object.wait(Native Method)
+	-  waiting on java.util.TaskQueue@55c598cd
+	at java.base@17.0.18/java.lang.Object.wait(Object.java:338)
+	at java.base@17.0.18/java.util.TimerThread.mainLoop(Timer.java:537)
+	at java.base@17.0.18/java.util.TimerThread.run(Timer.java:516)
+
+
+"DH-World Gen Queue Thread[0]" prio=5 Id=123 WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@10022585
+	at java.base@17.0.18/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@10022585
+	at java.base@17.0.18/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+	at java.base@17.0.18/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
+	at java.base@17.0.18/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3465)
+	at java.base@17.0.18/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3436)
+	at java.base@17.0.18/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1630)
+	at java.base@17.0.18/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+	at java.base@17.0.18/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+	...
+
+
+"DH-DataSource Request Ticker [minecraft:the_end] Thread[0]" daemon prio=5 Id=122 TIMED_WAITING
+	at java.base@17.0.18/java.lang.Thread.sleep(Native Method)
+	at TRANSFORMER/distanthorizons@2.4.5-b/com.seibel.distanthorizons.core.multiplayer.server.FullDataSourceRequestHandler.tickLoop(FullDataSourceRequestHandler.java:311)
+	at TRANSFORMER/distanthorizons@2.4.5-b/com.seibel.distanthorizons.core.multiplayer.server.FullDataSourceRequestHandler$$Lambda$20537/0x000070cac285f200.run(Unknown Source)
+	at java.base@17.0.18/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base@17.0.18/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base@17.0.18/java.lang.Thread.run(Thread.java:840)
+
+	Number of locked synchronizers = 1
+	- java.util.concurrent.ThreadPoolExecutor$Worker@495568c0
+
+
+"DH-LOD Builder Thread[1]" prio=5 Id=125 WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@5cb6f1cb
+	at java.base@17.0.18/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@5cb6f1cb
+	at java.base@17.0.18/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+	at java.base@17.0.18/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
+	at java.base@17.0.18/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3465)
+	at java.base@17.0.18/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3436)
+	at java.base@17.0.18/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1630)
+	at java.base@17.0.18/java.util.concurrent.ArrayBlockingQueue.take(ArrayBlockingQueue.java:420)
+	at java.base@17.0.18/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+	...
+
+
+"DH-Update Propagator Thread[0]" prio=5 Id=126 WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@d1166fc
+	at java.base@17.0.18/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@d1166fc
+	at java.base@17.0.18/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+	at java.base@17.0.18/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
+	at java.base@17.0.18/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3465)
+	at java.base@17.0.18/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3436)
+	at java.base@17.0.18/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1630)
+	at java.base@17.0.18/java.util.concurrent.ArrayBlockingQueue.take(ArrayBlockingQueue.java:420)
+	at java.base@17.0.18/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+	...
+
+
+"DH-Update Propagator Thread[1]" prio=5 Id=127 WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@d1166fc
+	at java.base@17.0.18/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@d1166fc
+	at java.base@17.0.18/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+	at java.base@17.0.18/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
+	at java.base@17.0.18/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3465)
+	at java.base@17.0.18/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3436)
+	at java.base@17.0.18/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1630)
+	at java.base@17.0.18/java.util.concurrent.ArrayBlockingQueue.take(ArrayBlockingQueue.java:420)
+	at java.base@17.0.18/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+	...
+
+
+"Server Watchdog" daemon prio=5 Id=128 RUNNABLE
+	at java.management@17.0.18/sun.management.ThreadImpl.dumpThreads0(Native Method)
+	at java.management@17.0.18/sun.management.ThreadImpl.dumpAllThreads(ThreadImpl.java:528)
+	at java.management@17.0.18/sun.management.ThreadImpl.dumpAllThreads(ThreadImpl.java:516)
+	at TRANSFORMER/minecraft@1.20.1/net.minecraft.server.dedicated.ServerWatchdog.run(ServerWatchdog.java:41)
+	at java.base@17.0.18/java.lang.Thread.run(Thread.java:840)
+
+
+"LanServerPinger #1" daemon prio=5 Id=129 TIMED_WAITING
+	at java.base@17.0.18/java.lang.Thread.sleep(Native Method)
+	at TRANSFORMER/minecraft@1.20.1/net.minecraft.client.server.LanServerPinger.run(LanServerPinger.java:48)
+
+
+"FileSystemWatchService" daemon prio=5 Id=134 RUNNABLE (in native)
+	at java.base@17.0.18/sun.nio.fs.LinuxWatchService.poll(Native Method)
+	at java.base@17.0.18/sun.nio.fs.LinuxWatchService$Poller.run(LinuxWatchService.java:314)
+	at java.base@17.0.18/java.lang.Thread.run(Thread.java:840)
+
+
+"Fzzy Config File Watcher" prio=5 Id=135 TIMED_WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@63c02ef4
+	at java.base@17.0.18/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@63c02ef4
+	at java.base@17.0.18/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+	at java.base@17.0.18/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1679)
+	at java.base@17.0.18/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+	at java.base@17.0.18/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+	at java.base@17.0.18/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+	at java.base@17.0.18/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+	at java.base@17.0.18/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	...
+
+
+"VoiceChatPacketProcessingThread" daemon prio=5 Id=141 RUNNABLE
+	at java.base@17.0.18/java.lang.Throwable.fillInStackTrace(Native Method)
+	at java.base@17.0.18/java.lang.Throwable.fillInStackTrace(Throwable.java:798)
+	-  locked javax.crypto.AEADBadTagException@1a3ac1b1
+	at java.base@17.0.18/java.lang.Throwable.<init>(Throwable.java:271)
+	at java.base@17.0.18/java.lang.Exception.<init>(Exception.java:67)
+	at java.base@17.0.18/java.security.GeneralSecurityException.<init>(GeneralSecurityException.java:58)
+	at java.base@17.0.18/javax.crypto.BadPaddingException.<init>(BadPaddingException.java:59)
+	at java.base@17.0.18/javax.crypto.AEADBadTagException.<init>(AEADBadTagException.java:54)
+	at java.base@17.0.18/com.sun.crypto.provider.GaloisCounterMode$GCMDecrypt.doFinal(GaloisCounterMode.java:1395)
+	...
+
+
+"VoiceChatServerThread" daemon prio=5 Id=140 RUNNABLE (in native)
+	at java.base@17.0.18/sun.nio.ch.DatagramChannelImpl.receive0(Native Method)
+	at java.base@17.0.18/sun.nio.ch.DatagramChannelImpl.receiveIntoNativeBuffer(DatagramChannelImpl.java:750)
+	at java.base@17.0.18/sun.nio.ch.DatagramChannelImpl.receive(DatagramChannelImpl.java:728)
+	at java.base@17.0.18/sun.nio.ch.DatagramChannelImpl.trustedBlockingReceive(DatagramChannelImpl.java:666)
+	at java.base@17.0.18/sun.nio.ch.DatagramChannelImpl.blockingReceive(DatagramChannelImpl.java:635)
+	at java.base@17.0.18/sun.nio.ch.DatagramSocketAdaptor.receive(DatagramSocketAdaptor.java:240)
+	at java.base@17.0.18/java.net.DatagramSocket.receive(DatagramSocket.java:700)
+	at TRANSFORMER/voicechat@1.20.1-2.6.15/de.maxhenkel.voicechat.plugins.impl.VoicechatSocketBase.read(VoicechatSocketBase.java:16)
+	...
+
+	Number of locked synchronizers = 1
+	- java.util.concurrent.locks.ReentrantLock$NonfairSync@1b15e17e
+
+
+"Netty Epoll Server IO #1" daemon prio=5 Id=160 RUNNABLE (in native)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.82.Final/io.netty.channel.epoll.Native.epollWait(Native Method)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.82.Final/io.netty.channel.epoll.Native.epollWait(Native.java:209)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.82.Final/io.netty.channel.epoll.Native.epollWait(Native.java:202)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.82.Final/io.netty.channel.epoll.EpollEventLoop.epollWaitNoTimerChange(EpollEventLoop.java:306)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.82.Final/io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:363)
+	at MC-BOOTSTRAP/io.netty.common@4.1.82.Final/io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at MC-BOOTSTRAP/io.netty.common@4.1.82.Final/io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at java.base@17.0.18/java.lang.Thread.run(Thread.java:840)
+
+
+"Netty Epoll Server IO #2" daemon prio=5 Id=161 RUNNABLE (in native)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.82.Final/io.netty.channel.epoll.Native.epollWait(Native Method)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.82.Final/io.netty.channel.epoll.Native.epollWait(Native.java:209)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.82.Final/io.netty.channel.epoll.Native.epollWait(Native.java:202)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.82.Final/io.netty.channel.epoll.EpollEventLoop.epollWaitNoTimerChange(EpollEventLoop.java:306)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.82.Final/io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:363)
+	at MC-BOOTSTRAP/io.netty.common@4.1.82.Final/io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at MC-BOOTSTRAP/io.netty.common@4.1.82.Final/io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at java.base@17.0.18/java.lang.Thread.run(Thread.java:840)
+
+
+"luckperms-worker-5" daemon prio=5 Id=163 WAITING on java.util.concurrent.ForkJoinPool@16dedcdf
+	at java.base@17.0.18/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.ForkJoinPool@16dedcdf
+	at java.base@17.0.18/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+	at java.base@17.0.18/java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:1724)
+	at java.base@17.0.18/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1623)
+	at java.base@17.0.18/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+
+
+"luckperms-worker-6" daemon prio=5 Id=164 WAITING on java.util.concurrent.ForkJoinPool@16dedcdf
+	at java.base@17.0.18/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.ForkJoinPool@16dedcdf
+	at java.base@17.0.18/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+	at java.base@17.0.18/java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:1724)
+	at java.base@17.0.18/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1623)
+	at java.base@17.0.18/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+
+
+"Netty Epoll Server IO #3" daemon prio=5 Id=169 RUNNABLE (in native)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.82.Final/io.netty.channel.epoll.Native.epollWait(Native Method)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.82.Final/io.netty.channel.epoll.Native.epollWait(Native.java:209)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.82.Final/io.netty.channel.epoll.Native.epollWait(Native.java:202)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.82.Final/io.netty.channel.epoll.EpollEventLoop.epollWaitNoTimerChange(EpollEventLoop.java:306)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.82.Final/io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:363)
+	at MC-BOOTSTRAP/io.netty.common@4.1.82.Final/io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at MC-BOOTSTRAP/io.netty.common@4.1.82.Final/io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at java.base@17.0.18/java.lang.Thread.run(Thread.java:840)
+
+
+"Netty Epoll Server IO #4" daemon prio=5 Id=170 RUNNABLE (in native)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.82.Final/io.netty.channel.epoll.Native.epollWait(Native Method)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.82.Final/io.netty.channel.epoll.Native.epollWait(Native.java:209)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.82.Final/io.netty.channel.epoll.Native.epollWait(Native.java:202)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.82.Final/io.netty.channel.epoll.EpollEventLoop.epollWaitNoTimerChange(EpollEventLoop.java:306)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.82.Final/io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:363)
+	at MC-BOOTSTRAP/io.netty.common@4.1.82.Final/io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at MC-BOOTSTRAP/io.netty.common@4.1.82.Final/io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at java.base@17.0.18/java.lang.Thread.run(Thread.java:840)
+
+
+"luckperms-worker-7" daemon prio=5 Id=172 WAITING on java.util.concurrent.ForkJoinPool@16dedcdf
+	at java.base@17.0.18/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.ForkJoinPool@16dedcdf
+	at java.base@17.0.18/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+	at java.base@17.0.18/java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:1724)
+	at java.base@17.0.18/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1623)
+	at java.base@17.0.18/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+
+
+"luckperms-worker-8" daemon prio=5 Id=173 WAITING on java.util.concurrent.ForkJoinPool@16dedcdf
+	at java.base@17.0.18/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.ForkJoinPool@16dedcdf
+	at java.base@17.0.18/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+	at java.base@17.0.18/java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:1724)
+	at java.base@17.0.18/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1623)
+	at java.base@17.0.18/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+
+
+"DH-FullDataPayloadSender" daemon prio=5 Id=186 TIMED_WAITING on java.util.TaskQueue@1db54266
+	at java.base@17.0.18/java.lang.Object.wait(Native Method)
+	-  waiting on java.util.TaskQueue@1db54266
+	at java.base@17.0.18/java.util.TimerThread.mainLoop(Timer.java:563)
+	at java.base@17.0.18/java.util.TimerThread.run(Timer.java:516)
+
+
+"Worker-Main-32" daemon prio=1 Id=188 TIMED_WAITING on java.util.concurrent.ForkJoinPool@7fe068aa
+	at java.base@17.0.18/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.ForkJoinPool@7fe068aa
+	at java.base@17.0.18/java.util.concurrent.locks.LockSupport.parkUntil(LockSupport.java:410)
+	at java.base@17.0.18/java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:1726)
+	at java.base@17.0.18/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1623)
+	at java.base@17.0.18/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+
+
+"Worker-Main-33" daemon prio=1 Id=189 WAITING on java.util.concurrent.ForkJoinPool@7fe068aa
+	at java.base@17.0.18/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.ForkJoinPool@7fe068aa
+	at java.base@17.0.18/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+	at java.base@17.0.18/java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:1724)
+	at java.base@17.0.18/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1623)
+	at java.base@17.0.18/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+
+
+"Netty Epoll Server IO #5" daemon prio=5 Id=194 RUNNABLE (in native)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.82.Final/io.netty.channel.epoll.Native.epollWait(Native Method)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.82.Final/io.netty.channel.epoll.Native.epollWait(Native.java:209)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.82.Final/io.netty.channel.epoll.Native.epollWait(Native.java:202)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.82.Final/io.netty.channel.epoll.EpollEventLoop.epollWaitNoTimerChange(EpollEventLoop.java:306)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.82.Final/io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:363)
+	at MC-BOOTSTRAP/io.netty.common@4.1.82.Final/io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at MC-BOOTSTRAP/io.netty.common@4.1.82.Final/io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at java.base@17.0.18/java.lang.Thread.run(Thread.java:840)
+
+
+"Netty Epoll Server IO #6" daemon prio=5 Id=196 RUNNABLE (in native)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.82.Final/io.netty.channel.epoll.Native.epollWait(Native Method)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.82.Final/io.netty.channel.epoll.Native.epollWait(Native.java:209)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.82.Final/io.netty.channel.epoll.Native.epollWait(Native.java:202)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.82.Final/io.netty.channel.epoll.EpollEventLoop.epollWaitNoTimerChange(EpollEventLoop.java:306)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.82.Final/io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:363)
+	at MC-BOOTSTRAP/io.netty.common@4.1.82.Final/io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at MC-BOOTSTRAP/io.netty.common@4.1.82.Final/io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at java.base@17.0.18/java.lang.Thread.run(Thread.java:840)
+
+
+"luckperms-worker-9" daemon prio=5 Id=197 WAITING on java.util.concurrent.ForkJoinPool@16dedcdf
+	at java.base@17.0.18/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.ForkJoinPool@16dedcdf
+	at java.base@17.0.18/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+	at java.base@17.0.18/java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:1724)
+	at java.base@17.0.18/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1623)
+	at java.base@17.0.18/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+
+
+"luckperms-worker-10" daemon prio=5 Id=198 WAITING on java.util.concurrent.ForkJoinPool@16dedcdf
+	at java.base@17.0.18/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.ForkJoinPool@16dedcdf
+	at java.base@17.0.18/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+	at java.base@17.0.18/java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:1724)
+	at java.base@17.0.18/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1623)
+	at java.base@17.0.18/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+
+
+"luckperms-worker-11" daemon prio=5 Id=199 WAITING on java.util.concurrent.ForkJoinPool@16dedcdf
+	at java.base@17.0.18/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.ForkJoinPool@16dedcdf
+	at java.base@17.0.18/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+	at java.base@17.0.18/java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:1724)
+	at java.base@17.0.18/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1623)
+	at java.base@17.0.18/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+
+
+"luckperms-worker-12" daemon prio=5 Id=200 WAITING on java.util.concurrent.ForkJoinPool@16dedcdf
+	at java.base@17.0.18/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.ForkJoinPool@16dedcdf
+	at java.base@17.0.18/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+	at java.base@17.0.18/java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:1724)
+	at java.base@17.0.18/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1623)
+	at java.base@17.0.18/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+
+
+"Netty Epoll Server IO #7" daemon prio=5 Id=201 RUNNABLE (in native)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.82.Final/io.netty.channel.epoll.Native.epollWait(Native Method)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.82.Final/io.netty.channel.epoll.Native.epollWait(Native.java:209)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.82.Final/io.netty.channel.epoll.Native.epollWait(Native.java:202)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.82.Final/io.netty.channel.epoll.EpollEventLoop.epollWaitNoTimerChange(EpollEventLoop.java:306)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.82.Final/io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:363)
+	at MC-BOOTSTRAP/io.netty.common@4.1.82.Final/io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at MC-BOOTSTRAP/io.netty.common@4.1.82.Final/io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at java.base@17.0.18/java.lang.Thread.run(Thread.java:840)
+
+
+"luckperms-worker-13" daemon prio=5 Id=211 WAITING on java.util.concurrent.ForkJoinPool@16dedcdf
+	at java.base@17.0.18/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.ForkJoinPool@16dedcdf
+	at java.base@17.0.18/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+	at java.base@17.0.18/java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:1724)
+	at java.base@17.0.18/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1623)
+	at java.base@17.0.18/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+
+
+"luckperms-worker-14" daemon prio=5 Id=212 TIMED_WAITING on java.util.concurrent.ForkJoinPool@16dedcdf
+	at java.base@17.0.18/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.ForkJoinPool@16dedcdf
+	at java.base@17.0.18/java.util.concurrent.locks.LockSupport.parkUntil(LockSupport.java:410)
+	at java.base@17.0.18/java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:1726)
+	at java.base@17.0.18/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1623)
+	at java.base@17.0.18/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+
+
+"luckperms-worker-15" daemon prio=5 Id=215 WAITING on java.util.concurrent.ForkJoinPool@16dedcdf
+	at java.base@17.0.18/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.ForkJoinPool@16dedcdf
+	at java.base@17.0.18/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+	at java.base@17.0.18/java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:1724)
+	at java.base@17.0.18/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1623)
+	at java.base@17.0.18/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+
+
+"DH-IO Thread[0]" prio=5 Id=222 WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@331b19ae
+	at java.base@17.0.18/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@331b19ae
+	at java.base@17.0.18/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+	at java.base@17.0.18/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
+	at java.base@17.0.18/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3465)
+	at java.base@17.0.18/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3436)
+	at java.base@17.0.18/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1630)
+	at java.base@17.0.18/java.util.concurrent.ArrayBlockingQueue.take(ArrayBlockingQueue.java:420)
+	at java.base@17.0.18/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+	...
+
+
+"DH-IO Thread[1]" prio=5 Id=223 WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@331b19ae
+	at java.base@17.0.18/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@331b19ae
+	at java.base@17.0.18/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+	at java.base@17.0.18/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
+	at java.base@17.0.18/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3465)
+	at java.base@17.0.18/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3436)
+	at java.base@17.0.18/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1630)
+	at java.base@17.0.18/java.util.concurrent.ArrayBlockingQueue.take(ArrayBlockingQueue.java:420)
+	at java.base@17.0.18/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+	...
+
+
+"DH-Network Thread[0]" prio=5 Id=224 WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@7b100a2
+	at java.base@17.0.18/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@7b100a2
+	at java.base@17.0.18/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+	at java.base@17.0.18/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
+	at java.base@17.0.18/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3465)
+	at java.base@17.0.18/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3436)
+	at java.base@17.0.18/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1630)
+	at java.base@17.0.18/java.util.concurrent.ArrayBlockingQueue.take(ArrayBlockingQueue.java:420)
+	at java.base@17.0.18/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+	...
+
+
+"DH-Network Thread[1]" prio=5 Id=225 WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@7b100a2
+	at java.base@17.0.18/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@7b100a2
+	at java.base@17.0.18/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+	at java.base@17.0.18/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
+	at java.base@17.0.18/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3465)
+	at java.base@17.0.18/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3436)
+	at java.base@17.0.18/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1630)
+	at java.base@17.0.18/java.util.concurrent.ArrayBlockingQueue.take(ArrayBlockingQueue.java:420)
+	at java.base@17.0.18/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+	...
+
+
+"Tombstone Backup Thread" prio=5 Id=236 WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@3020d440
+	at java.base@17.0.18/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@3020d440
+	at java.base@17.0.18/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+	at java.base@17.0.18/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
+	at java.base@17.0.18/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3465)
+	at java.base@17.0.18/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3436)
+	at java.base@17.0.18/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1630)
+	at java.base@17.0.18/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+	at java.base@17.0.18/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+	...
+
+
+"DH-Positional Lock Cleanup Thread[0]" daemon prio=5 Id=237 TIMED_WAITING
+	at java.base@17.0.18/java.lang.Thread.sleep(Native Method)
+	at TRANSFORMER/distanthorizons@2.4.5-b/com.seibel.distanthorizons.core.util.threading.PositionalLockProvider.removeExpiredLocks(PositionalLockProvider.java:76)
+	at TRANSFORMER/distanthorizons@2.4.5-b/com.seibel.distanthorizons.core.util.threading.PositionalLockProvider$$Lambda$24400/0x000070cac2ccc698.run(Unknown Source)
+	at java.base@17.0.18/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base@17.0.18/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base@17.0.18/java.lang.Thread.run(Thread.java:840)
+
+	Number of locked synchronizers = 1
+	- java.util.concurrent.ThreadPoolExecutor$Worker@7c1db8b6
+
+
+"AN stolen Minecolonies Pathfinding Worker #0" daemon prio=5 Id=272 WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@4cf94fd6
+	at java.base@17.0.18/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@4cf94fd6
+	at java.base@17.0.18/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+	at java.base@17.0.18/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
+	at java.base@17.0.18/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3465)
+	at java.base@17.0.18/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3436)
+	at java.base@17.0.18/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1630)
+	at java.base@17.0.18/java.util.concurrent.LinkedBlockingDeque.takeFirst(LinkedBlockingDeque.java:485)
+	at java.base@17.0.18/java.util.concurrent.LinkedBlockingDeque.take(LinkedBlockingDeque.java:673)
+	...
+
+
+"luckperms-command-executor" daemon prio=5 Id=286 WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@2744f98e
+	at java.base@17.0.18/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@2744f98e
+	at java.base@17.0.18/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+	at java.base@17.0.18/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
+	at java.base@17.0.18/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3465)
+	at java.base@17.0.18/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3436)
+	at java.base@17.0.18/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1630)
+	at java.base@17.0.18/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+	at java.base@17.0.18/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+	...
+
+
+"Ice and Fire Pathfinding Worker #0" daemon prio=10 Id=289 WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@287f59d4
+	at java.base@17.0.18/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@287f59d4
+	at java.base@17.0.18/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+	at java.base@17.0.18/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
+	at java.base@17.0.18/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3465)
+	at java.base@17.0.18/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3436)
+	at java.base@17.0.18/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1630)
+	at java.base@17.0.18/java.util.concurrent.LinkedBlockingDeque.takeFirst(LinkedBlockingDeque.java:485)
+	at java.base@17.0.18/java.util.concurrent.LinkedBlockingDeque.take(LinkedBlockingDeque.java:673)
+	...
+
+
+"FastSuite Recipe Lookup Thread: 94" daemon prio=5 Id=573 WAITING on java.util.concurrent.ForkJoinPool@1ecb1a4f
+	at java.base@17.0.18/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.ForkJoinPool@1ecb1a4f
+	at java.base@17.0.18/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+	at java.base@17.0.18/java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:1724)
+	at java.base@17.0.18/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1623)
+	at java.base@17.0.18/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+
+
+"FastSuite Recipe Lookup Thread: 96" daemon prio=5 Id=583 WAITING on java.util.concurrent.ForkJoinPool@1ecb1a4f
+	at java.base@17.0.18/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.ForkJoinPool@1ecb1a4f
+	at java.base@17.0.18/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+	at java.base@17.0.18/java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:1724)
+	at java.base@17.0.18/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1623)
+	at java.base@17.0.18/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+
+
+"FastSuite Recipe Lookup Thread: 98" daemon prio=5 Id=588 TIMED_WAITING on java.util.concurrent.ForkJoinPool@1ecb1a4f
+	at java.base@17.0.18/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.ForkJoinPool@1ecb1a4f
+	at java.base@17.0.18/java.util.concurrent.locks.LockSupport.parkUntil(LockSupport.java:410)
+	at java.base@17.0.18/java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:1726)
+	at java.base@17.0.18/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1623)
+	at java.base@17.0.18/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+
+
+"ForkJoinPool-6-worker-32" daemon prio=5 Id=600 TIMED_WAITING on java.util.concurrent.ForkJoinPool@18ca71bf
+	at java.base@17.0.18/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.ForkJoinPool@18ca71bf
+	at java.base@17.0.18/java.util.concurrent.locks.LockSupport.parkUntil(LockSupport.java:410)
+	at java.base@17.0.18/java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:1726)
+	at java.base@17.0.18/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1623)
+	at java.base@17.0.18/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+
+
+"Worker-Main-185" daemon prio=1 Id=601 WAITING on java.util.concurrent.ForkJoinPool@7fe068aa
+	at java.base@17.0.18/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.ForkJoinPool@7fe068aa
+	at java.base@17.0.18/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+	at java.base@17.0.18/java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:1724)
+	at java.base@17.0.18/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1623)
+	at java.base@17.0.18/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+
+
+
+Stacktrace:
+	at net.minecraft.server.dedicated.ServerWatchdog.run(ServerWatchdog.java:56) ~[server-1.20.1-20230612.114412-srg.jar%23301!/:?] {re:classloading}
+	at java.lang.Thread.run(Thread.java:840) ~[?:?] {re:mixin}
+
+
+-- Performance stats --
+Details:
+	Random tick rate: 3
+	Level stats: ResourceKey[minecraft:dimension / minecraft:overworld]: players: 2, entities: 543,543,292,1764,1764,0,0 [minecraft:pig:190,minecraft:sheep:50,minecraft:falling_block:37,minecraft:item:32,minecraft:zombie:30], block_entities: 1594 [minecraft:chest:505,minecraft:daylight_detector:368,minecraft:mob_spawner:197,minecraft:sculk_sensor:193,minecraft:sculk_catalyst:125], block_ticks: 181, fluid_ticks: 797, chunk_source: Chunks[S] W: 5004 E: 541,541,291,1764,1764,0,0,
+ResourceKey[minecraft:dimension / aether:the_aether]: players: 0, entities: 0,0,0,0,0,0,0 [], block_entities: 0 [], block_ticks: 0, fluid_ticks: 0, chunk_source: Chunks[S] W: 0 E: 0,0,0,0,0,0,0,
+ResourceKey[minecraft:dimension / minecraft:the_nether]: players: 0, entities: 0,0,0,0,0,0,0 [], block_entities: 0 [], block_ticks: 0, fluid_ticks: 0, chunk_source: Chunks[S] W: 0 E: 0,0,0,0,0,0,0,
+ResourceKey[minecraft:dimension / minecraft:the_end]: players: 0, entities: 0,0,0,0,0,0,0 [], block_entities: 0 [], block_ticks: 0, fluid_ticks: 0, chunk_source: Chunks[S] W: 0 E: 0,0,0,0,0,0,0
+
+-- System Details --
+Details:
+	Minecraft Version: 1.20.1
+	Minecraft Version ID: 1.20.1
+	Operating System: Linux (amd64) version 6.8.0-1044-azure
+	Java Version: 17.0.18, Ubuntu
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode, sharing), Ubuntu
+	Memory: 1418024672 bytes (1352 MiB) / 6434062336 bytes (6136 MiB) up to 12884901888 bytes (12288 MiB)
+	CPUs: 4
+	JVM Flags: 2 total; -Xms2G -Xmx12G
+	Server Running: true
+	Player Count: 3 / 20; [ServerPlayer['Slender676'/35256, l='ServerLevel[world]', x=-492.06, y=103.00, z=472.85], ServerPlayer['Ruxxiopasa'/37801, l='ServerLevel[world]', x=-444.35, y=64.25, z=497.14], ServerPlayer['JuanArcJL12'/72062, l='ServerLevel[world]', x=-444.35, y=64.25, z=497.14]]
+	Data Packs: vanilla, mod:cyclopscore, mod:man_of_many_planes (incompatible), mod:kuma_api, mod:animation_overhaul (incompatible), mod:parcool_compat_addon (incompatible), mod:geckolib, mod:undeadnights, mod:playeranimator (incompatible), mod:aether, mod:immersive_aircraft (incompatible), mod:sophisticatedcore (incompatible), mod:natural_disasters, mod:insanelib, mod:underground_bunkers, mod:xaeroworldmap (incompatible), mod:enhancedvisuals, mod:placebo (incompatible), mod:modernfix (incompatible), mod:citadel (incompatible), mod:evilcraft, mod:bookshelf, mod:sophisticatedbackpacks (incompatible), mod:apotheosis (incompatible), mod:additionalstructures, mod:balm, mod:carryon (incompatible), mod:cloth_config (incompatible), mod:fzzy_config (incompatible), mod:mcwbridges, mod:explorify, mod:alekiships (incompatible), mod:hangglider, mod:lionfishapi (incompatible), mod:philipsruins (incompatible), mod:cataclysm (incompatible), mod:curios (incompatible), mod:patchouli (incompatible), mod:attributeslib (incompatible), mod:elevatorid, mod:tombstone, mod:cumulus_menus, mod:inventoryprofilesnext (incompatible), mod:architectury (incompatible), mod:otyacraftengine, mod:iammusicplayer, mod:justhammers (incompatible), mod:cupboard (incompatible), mod:invmove_compat (incompatible), mod:enhancedai, mod:nitrogen_internals, mod:doomsday_decoration, mod:t_and_t (incompatible), mod:scalinghealth, mod:playerrevive, mod:enchantinginfuser, mod:item_descriptions, mod:creepingwoods, mod:galena_hats (incompatible), mod:smartbrainlib, mod:betteranimationscollection, mod:trashslot, mod:jei, mod:visualworkbench, mod:fieldguide (incompatible), mod:xaerolib (incompatible), mod:tacz, mod:caelus (incompatible), mod:invmove (incompatible), mod:fastsuite (incompatible), mod:multikulti_core, mod:fromtheshadows (incompatible), mod:nirvana, mod:glitchcore (incompatible), mod:mutantszombies (incompatible), mod:iceandfire, mod:multikulti_registrate, mod:morehitboxes (incompatible), mod:ars_nouveau (incompatible), mod:watut, mod:luckperms (incompatible), mod:puzzlesaccessapi, mod:forge, mod:craftingtweaks, mod:horror_element_mod, mod:distanthorizons (incompatible), mod:voicechat (incompatible), mod:sound_physics_remastered (incompatible), mod:ezvcsurvival, mod:simplyswords (incompatible), mod:libipn (incompatible), mod:enchdesc (incompatible), mod:bettercombat (incompatible), mod:necronomicon, mod:silentlib, mod:immersiveoverlays, mod:jade (incompatible), mod:creativecore, mod:smoothboot, mod:kotlinforforge (incompatible), mod:xaerominimap (incompatible), mod:tacz_npc, mod:lunar, mod:parcool (incompatible), mod:cryonicconfig (incompatible), mod:immediatelyfast (incompatible), mod:coroutil (incompatible), mod:ferritecore (incompatible), mod:puzzleslib, mod:badoptimizations (incompatible), mod:cristellib (incompatible), builtin/aether_accessories, tacz_resources
+	Enabled Feature Flags: minecraft:vanilla
+	World Generation: Experimental
+	Is Modded: Definitely; Server brand changed to 'forge'
+	Type: Dedicated Server (map_server.txt)
+	ModLauncher: 10.0.9+10.0.9+main.dcd20f30
+	ModLauncher launch target: forgeserver
+	ModLauncher naming: srg
+	ModLauncher services: 
+		mixin-0.8.5.jar mixin PLUGINSERVICE 
+		eventbus-6.0.5.jar eventbus PLUGINSERVICE 
+		fmlloader-1.20.1-47.4.10.jar slf4jfixer PLUGINSERVICE 
+		fmlloader-1.20.1-47.4.10.jar object_holder_definalize PLUGINSERVICE 
+		fmlloader-1.20.1-47.4.10.jar runtime_enum_extender PLUGINSERVICE 
+		fmlloader-1.20.1-47.4.10.jar capability_token_subclass PLUGINSERVICE 
+		accesstransformers-8.0.4.jar accesstransformer PLUGINSERVICE 
+		fmlloader-1.20.1-47.4.10.jar runtimedistcleaner PLUGINSERVICE 
+		modlauncher-10.0.9.jar mixin TRANSFORMATIONSERVICE 
+		modlauncher-10.0.9.jar fml TRANSFORMATIONSERVICE 
+	FML Language Providers: 
+		minecraft@1.0
+		kotlinforforge@4.12.0
+		javafml@null
+		lowcodefml@null
+	Mod List: 
+		CyclopsCore-1.20.1-1.22.0.jar                     |Cyclops Core                  |cyclopscore                   |1.22.0              |DONE      |Manifest: NOSIGNATURE
+		man_of_many_planes-0.2.0+1.20.1-forge.jar         |Man of Many Planes            |man_of_many_planes            |0.2.0+1.20.1        |DONE      |Manifest: NOSIGNATURE
+		kuma-api-forge-20.1.12+1.20.1.jar                 |KumaAPI                       |kuma_api                      |20.1.12             |DONE      |Manifest: NOSIGNATURE
+		Animation_Overhaul-forge-1.20.x-1.3.1.jar         |Animation Overhaul            |animation_overhaul            |1.3.1               |DONE      |Manifest: NOSIGNATURE
+		ParCool-CompatibilityAddon-1.20.1-3.4.1.5-1.1.jar |ParCool+ / Compatibility Addon|parcool_compat_addon          |1.1                 |DONE      |Manifest: NOSIGNATURE
+		geckolib-forge-1.20.1-4.8.3.jar                   |GeckoLib 4                    |geckolib                      |4.8.3               |DONE      |Manifest: NOSIGNATURE
+		UndeadNights-2.1.0-Forge-mc1.20.1.jar             |UndeadNights                  |undeadnights                  |2.1.0-Forge-mc1.20.1|DONE      |Manifest: NOSIGNATURE
+		player-animation-lib-forge-1.0.2-rc1+1.20.jar     |Player Animator               |playeranimator                |1.0.2-rc1+1.20      |DONE      |Manifest: NOSIGNATURE
+		aether-1.20.1-1.5.2-neoforge.jar                  |The Aether                    |aether                        |1.20.1-1.5.2-neoforg|DONE      |Manifest: NOSIGNATURE
+		immersive_aircraft-1.4.0+1.20.1-forge.jar         |Immersive Aircraft            |immersive_aircraft            |1.4.0+1.20.1        |DONE      |Manifest: NOSIGNATURE
+		sophisticatedcore-1.20.1-1.3.16.1631.jar          |Sophisticated Core            |sophisticatedcore             |1.3.16.1631         |DONE      |Manifest: NOSIGNATURE
+		NaturalDisasters_1-20-1_0-1-2.jar                 |Natural Disasters             |natural_disasters             |0.1.0               |DONE      |Manifest: NOSIGNATURE
+		insanelib-1.23.4.4.jar                            |InsaneLib                     |insanelib                     |1.23.4.4            |DONE      |Manifest: NOSIGNATURE
+		UndergroundBunkers-1.0.5-1.20.x-forge.jar         |Underground Bunkers           |underground_bunkers           |1.0.5               |DONE      |Manifest: NOSIGNATURE
+		xaeroworldmap-forge-1.20.1-1.40.11.jar            |Xaero's World Map             |xaeroworldmap                 |1.40.11             |DONE      |Manifest: NOSIGNATURE
+		EnhancedVisuals_FORGE_v1.8.2_mc1.20.1.jar         |EnhancedVisuals               |enhancedvisuals               |1.8.2               |DONE      |Manifest: NOSIGNATURE
+		Placebo-1.20.1-8.6.3.jar                          |Placebo                       |placebo                       |8.6.3               |DONE      |Manifest: NOSIGNATURE
+		modernfix-forge-5.26.2+mc1.20.1.jar               |ModernFix                     |modernfix                     |5.26.2+mc1.20.1     |DONE      |Manifest: NOSIGNATURE
+		citadel-2.6.3-1.20.1.jar                          |Citadel                       |citadel                       |2.6.3               |DONE      |Manifest: NOSIGNATURE
+		EvilCraft-1.20.1-1.2.59.jar                       |EvilCraft                     |evilcraft                     |1.2.59              |DONE      |Manifest: NOSIGNATURE
+		Bookshelf-Forge-1.20.1-20.2.15.jar                |Bookshelf                     |bookshelf                     |20.2.15             |DONE      |Manifest: eb:c4:b1:67:8b:f9:0c:db:dc:4f:01:b1:8e:61:64:39:4c:10:85:0b:a6:c4:c7:48:f0:fa:95:f2:cb:08:3a:e5
+		sophisticatedbackpacks-1.20.1-3.24.31.1628.jar    |Sophisticated Backpacks       |sophisticatedbackpacks        |3.24.31.1628        |DONE      |Manifest: NOSIGNATURE
+		Apotheosis-1.20.1-7.4.8.jar                       |Apotheosis                    |apotheosis                    |7.4.8               |DONE      |Manifest: NOSIGNATURE
+		AdditionalStructures-1.20.x-(v.4.2.2).jar         |Additional Structures         |additionalstructures          |4.2.2               |DONE      |Manifest: NOSIGNATURE
+		balm-forge-1.20.1-7.3.38-all.jar                  |Balm                          |balm                          |7.3.38              |DONE      |Manifest: NOSIGNATURE
+		carryon-forge-1.20.1-2.1.2.7.jar                  |Carry On                      |carryon                       |2.1.2.7             |DONE      |Manifest: NOSIGNATURE
+		cloth-config-11.1.136-forge.jar                   |Cloth Config v10 API          |cloth_config                  |11.1.136            |DONE      |Manifest: NOSIGNATURE
+		fzzy_config-0.7.6+1.20.1+forge.jar                |Fzzy Config                   |fzzy_config                   |0.7.6+1.20.1+forge  |DONE      |Manifest: NOSIGNATURE
+		mcw-bridges-3.1.2-mc1.20.1forge.jar               |Macaw's Bridges               |mcwbridges                    |3.1.2               |DONE      |Manifest: NOSIGNATURE
+		Explorify v1.6.4 f15-88.mod.jar                   |Explorify                     |explorify                     |1.6.4               |DONE      |Manifest: NOSIGNATURE
+		alekiNiftyShips-FORGE-1.20.1-1.0.14.jar           |aleki's Nifty Ships           |alekiships                    |1.0.14              |DONE      |Manifest: NOSIGNATURE
+		HangGlider-v8.0.1-1.20.1-Forge.jar                |Hang Glider                   |hangglider                    |8.0.1               |DONE      |Manifest: 9a:09:85:98:65:c4:8c:11:c5:49:f6:d6:33:23:39:df:8d:b4:ff:92:84:b8:bd:a5:83:9f:ac:7f:2a:d1:4b:6a
+		lionfishapi-2.4-Fix.jar                           |LionfishAPI                   |lionfishapi                   |2.4-Fix             |DONE      |Manifest: NOSIGNATURE
+		PhilipsRuins1.20.1-5.7.jar                        |Philips Ruins                 |philipsruins                  |5.6                 |DONE      |Manifest: NOSIGNATURE
+		L_Enders_Cataclysm-3.26-enchant-fix.jar           |cataclysm                     |cataclysm                     |3.26                |DONE      |Manifest: NOSIGNATURE
+		curios-forge-5.14.1+1.20.1.jar                    |Curios API                    |curios                        |5.14.1+1.20.1       |DONE      |Manifest: NOSIGNATURE
+		Patchouli-1.20.1-85-FORGE.jar                     |Patchouli                     |patchouli                     |1.20.1-85-FORGE     |DONE      |Manifest: NOSIGNATURE
+		ApothicAttributes-1.20.1-1.3.7.jar                |Apothic Attributes            |attributeslib                 |1.3.7               |DONE      |Manifest: NOSIGNATURE
+		elevatorid-1.20.1-1.9.1-forge.jar                 |Elevator Mod                  |elevatorid                    |1.20.1-1.9.1-forge  |DONE      |Manifest: NOSIGNATURE
+		tombstone-1.20.1-9.0.9.jar                        |Corail Tombstone              |tombstone                     |9.0.9               |DONE      |Manifest: NOSIGNATURE
+		cumulus_menus-1.20.1-1.0.1-neoforge.jar           |Cumulus                       |cumulus_menus                 |1.20.1-1.0.1-neoforg|DONE      |Manifest: NOSIGNATURE
+		InventoryProfilesNext-forge-1.20-1.10.20.jar      |Inventory Profiles Next       |inventoryprofilesnext         |1.10.20             |DONE      |Manifest: NOSIGNATURE
+		architectury-9.2.14-forge.jar                     |Architectury                  |architectury                  |9.2.14              |DONE      |Manifest: NOSIGNATURE
+		otyacraftengine-forge-mc1.20-3.7.0-alpha.2.jar    |Otyacraft Engine              |otyacraftengine               |3.7.0-alpha.2       |DONE      |Manifest: NOSIGNATURE
+		IamMusicPlayer-Mod-Forge-1.20.1.jar               |Iam Music Player              |iammusicplayer                |3.22.0-alpha.5      |DONE      |Manifest: NOSIGNATURE
+		justhammers-forge-2.0.3+mc1.20.1.jar              |Just Hammers                  |justhammers                   |2.0.3+mc1.20.1      |DONE      |Manifest: NOSIGNATURE
+		cupboard-1.20.1-3.5.jar                           |Cupboard utilities            |cupboard                      |1.20.1-3.5          |DONE      |Manifest: NOSIGNATURE
+		InvMoveCompats-0.5.0+1.20.4-Forge.jar             |InvMoveCompats                |invmove_compat                |0.5.0               |DONE      |Manifest: NOSIGNATURE
+		enhancedai-3.3.6.3.jar                            |Enhanced AI                   |enhancedai                    |3.3.6.3             |DONE      |Manifest: NOSIGNATURE
+		nitrogen_internals-1.20.1-1.0.12-neoforge.jar     |Nitrogen                      |nitrogen_internals            |1.20.1-1.0.12-neofor|DONE      |Manifest: NOSIGNATURE
+		doomsday_decoration-1.1.3-forge-1.20.1.jar        |Doomsday Decoration           |doomsday_decoration           |1.0.0               |DONE      |Manifest: NOSIGNATURE
+		Towns-and-Towers-1.12-Fabric+Forge.jar            |Towns and Towers              |t_and_t                       |0.0NONE             |DONE      |Manifest: NOSIGNATURE
+		ScalingHealth-1.20.1-8.0.2+9.jar                  |Scaling Health                |scalinghealth                 |8.0.2+9             |DONE      |Manifest: NOSIGNATURE
+		PlayerRevive_FORGE_v2.0.31_mc1.20.1.jar           |PlayerRevive                  |playerrevive                  |2.0.31              |DONE      |Manifest: NOSIGNATURE
+		EnchantingInfuser-v8.0.3-1.20.1-Forge.jar         |Enchanting Infuser            |enchantinginfuser             |8.0.3               |DONE      |Manifest: 9a:09:85:98:65:c4:8c:11:c5:49:f6:d6:33:23:39:df:8d:b4:ff:92:84:b8:bd:a5:83:9f:ac:7f:2a:d1:4b:6a
+		item-descriptions-2.5.4+1.20.1-forge.jar          |Item Descriptions             |item_descriptions             |2.5.4+1.20.1        |DONE      |Manifest: NOSIGNATURE
+		CreepingWoods-forge-1.20.1-2.4.jar                |Creeping Woods                |creepingwoods                 |1.0.0               |DONE      |Manifest: NOSIGNATURE
+		hats-forge-1.20.1-1.2.4.jar                       |Galena Hats                   |galena_hats                   |1.20.1-1.2.4        |DONE      |Manifest: NOSIGNATURE
+		SmartBrainLib-forge-1.20.1-1.15.jar               |SmartBrainLib                 |smartbrainlib                 |1.15                |DONE      |Manifest: NOSIGNATURE
+		BetterAnimationsCollection-v8.0.1-1.20.1-Forge.jar|Better Animations Collection  |betteranimationscollection    |8.0.1               |DONE      |Manifest: 9a:09:85:98:65:c4:8c:11:c5:49:f6:d6:33:23:39:df:8d:b4:ff:92:84:b8:bd:a5:83:9f:ac:7f:2a:d1:4b:6a
+		trashslot-forge-1.20.1-15.1.4.jar                 |TrashSlot                     |trashslot                     |15.1.4              |DONE      |Manifest: NOSIGNATURE
+		jei-1.20.1-forge-15.20.0.129.jar                  |Just Enough Items             |jei                           |15.20.0.129         |DONE      |Manifest: NOSIGNATURE
+		VisualWorkbench-v8.0.1-1.20.1-Forge.jar           |Visual Workbench              |visualworkbench               |8.0.1               |DONE      |Manifest: 9a:09:85:98:65:c4:8c:11:c5:49:f6:d6:33:23:39:df:8d:b4:ff:92:84:b8:bd:a5:83:9f:ac:7f:2a:d1:4b:6a
+		fieldguide-forge-1.20.1-1.6.9.jar                 |Field Guide                   |fieldguide                    |1.6.9               |DONE      |Manifest: NOSIGNATURE
+		xaerolib-forge-1.20.1-1.1.0.jar                   |XaeroLib                      |xaerolib                      |1.1.0               |DONE      |Manifest: NOSIGNATURE
+		tacz-1.20.1-1.1.7-hotfix2.jar                     |Timeless & Classics Guns: Zero|tacz                          |1.1.7-hotfix2       |DONE      |Manifest: NOSIGNATURE
+		caelus-forge-3.2.0+1.20.1.jar                     |Caelus API                    |caelus                        |3.2.0+1.20.1        |DONE      |Manifest: NOSIGNATURE
+		InvMove-0.9.3+1.20.1-Forge.jar                    |InvMove                       |invmove                       |0.9.3               |DONE      |Manifest: NOSIGNATURE
+		FastSuite-1.20.1-5.1.2.jar                        |Fast Suite                    |fastsuite                     |5.1.2               |DONE      |Manifest: NOSIGNATURE
+		multikulti-core-forge-1.20.1-1.1.5.jar            |Multi-Kulti                   |multikulti_core               |1.20.1-1.1.5        |DONE      |Manifest: NOSIGNATURE
+		fromtheshadowsreborn-2.9.jar                      |From the Shadows Reborn       |fromtheshadows                |2.9                 |DONE      |Manifest: NOSIGNATURE
+		nirvana-forge-1.2.5.jar                           |Nirvana                       |nirvana                       |1.2.5               |DONE      |Manifest: NOSIGNATURE
+		GlitchCore-forge-1.20.1-0.0.1.1.jar               |GlitchCore                    |glitchcore                    |0.0.1.1             |DONE      |Manifest: NOSIGNATURE
+		MutantsZombies-1.3.2-Forge-mc1.20.1.jar           |Mutants and Zombies           |mutantszombies                |1.3.2-Forge-mc1.20.1|DONE      |Manifest: NOSIGNATURE
+		iceandfire-2.1.13-1.20.1-beta-5.jar               |Ice and Fire                  |iceandfire                    |2.1.13-1.20.1       |DONE      |Manifest: NOSIGNATURE
+		multikulti-registrate-forge-1.20.1-1.1.5.jar      |Multi-Kulti                   |multikulti_registrate         |1.20.1-1.1.5        |DONE      |Manifest: NOSIGNATURE
+		morehitboxes-forge-1.20.1-1.9.2.jar               |morehitboxes                  |morehitboxes                  |1.9.2               |DONE      |Manifest: NOSIGNATURE
+		ars_nouveau-1.20.1-4.12.7-all.jar                 |Ars Nouveau                   |ars_nouveau                   |4.12.7              |DONE      |Manifest: NOSIGNATURE
+		watut-forge-1.20.1-1.2.3.jar                      |What Are They Up To           |watut                         |1.20.1-1.2.3        |DONE      |Manifest: NOSIGNATURE
+		LuckPerms-Forge-5.4.102.jar                       |LuckPerms                     |luckperms                     |5.4.102             |DONE      |Manifest: NOSIGNATURE
+		puzzlesaccessapi-forge-20.1.1.jar                 |Puzzles Access Api            |puzzlesaccessapi              |20.1.1              |DONE      |Manifest: NOSIGNATURE
+		forge-1.20.1-47.4.10-universal.jar                |Forge                         |forge                         |47.4.10             |DONE      |Manifest: 84:ce:76:e8:45:35:e4:0e:63:86:df:47:59:80:0f:67:6c:c1:5f:6e:5f:4d:b3:54:47:1a:9f:7f:ed:5e:f2:90
+		craftingtweaks-forge-1.20.1-18.2.8.jar            |CraftingTweaks                |craftingtweaks                |18.2.8              |DONE      |Manifest: NOSIGNATURE
+		server-1.20.1-20230612.114412-srg.jar             |Minecraft                     |minecraft                     |1.20.1              |DONE      |Manifest: NOSIGNATURE
+		horror_element_mod-1.6.3-forge-1.20.1.jar         |Horror Element Mod            |horror_element_mod            |1.6.3               |DONE      |Manifest: NOSIGNATURE
+		DistantHorizons-2.4.5-b-1.20.1-fabric-forge.jar   |Distant Horizons              |distanthorizons               |2.4.5-b             |DONE      |Manifest: NOSIGNATURE
+		voicechat-forge-1.20.1-2.6.15.jar                 |Simple Voice Chat             |voicechat                     |1.20.1-2.6.15       |DONE      |Manifest: NOSIGNATURE
+		sound-physics-remastered-forge-1.20.1-1.5.1.jar   |Sound Physics Remastered      |sound_physics_remastered      |1.20.1-1.5.1        |DONE      |Manifest: NOSIGNATURE
+		Voiceless Survival-forge-1.20.1-2.0.2.jar         |Voiceless Survival            |ezvcsurvival                  |2.0.1               |DONE      |Manifest: NOSIGNATURE
+		simplyswords-forge-1.56.0-1.20.1.jar              |Simply Swords                 |simplyswords                  |1.56.0-1.20.1       |DONE      |Manifest: NOSIGNATURE
+		libIPN-forge-1.20-4.0.2.jar                       |libIPN                        |libipn                        |4.0.2               |DONE      |Manifest: NOSIGNATURE
+		EnchantmentDescriptions-Forge-1.20.1-17.1.21.jar  |EnchantmentDescriptions       |enchdesc                      |17.1.21             |DONE      |Manifest: eb:c4:b1:67:8b:f9:0c:db:dc:4f:01:b1:8e:61:64:39:4c:10:85:0b:a6:c4:c7:48:f0:fa:95:f2:cb:08:3a:e5
+		bettercombat-forge-1.9.0+1.20.1.jar               |Better Combat                 |bettercombat                  |1.9.0+1.20.1        |DONE      |Manifest: NOSIGNATURE
+		Necronomicon-Forge-1.6.0+1.20.1.jar               |Necronomicon                  |necronomicon                  |1.6.0               |DONE      |Manifest: NOSIGNATURE
+		silent-lib-1.20.1-8.0.0.jar                       |Silent Lib                    |silentlib                     |8.0.0               |DONE      |Manifest: NOSIGNATURE
+		immersiveoverlays-1.6.3+1.20.1-forge.jar          |Immersive Overlays            |immersiveoverlays             |1.6.3+1.20.1        |DONE      |Manifest: NOSIGNATURE
+		Jade-1.20.1-Forge-11.13.2.jar                     |Jade                          |jade                          |11.13.2+forge       |DONE      |Manifest: NOSIGNATURE
+		CreativeCore_FORGE_v2.12.35_mc1.20.1.jar          |CreativeCore                  |creativecore                  |2.12.35             |DONE      |Manifest: NOSIGNATURE
+		smoothboot(reloaded)-mc1.20.1-0.0.4.jar           |Smooth Boot (Reloaded)        |smoothboot                    |0.0.4               |DONE      |Manifest: NOSIGNATURE
+		kffmod-4.12.0.jar                                 |Kotlin For Forge              |kotlinforforge                |4.12.0              |DONE      |Manifest: NOSIGNATURE
+		xaerominimap-forge-1.20.1-25.3.10.jar             |Xaero's Minimap               |xaerominimap                  |25.3.10             |DONE      |Manifest: NOSIGNATURE
+		tacz_npc-1.2.0.jar                                |[Tacz] NPCs                   |tacz_npc                      |1.0.0               |DONE      |Manifest: NOSIGNATURE
+		Lunar-forge-1.20.1-0.2.7.jar                      |Lunar                         |lunar                         |0.2.7               |DONE      |Manifest: NOSIGNATURE
+		ParCool-1.20.1-3.4.3.3.jar                        |ParCool!                      |parcool                       |3.4.3.3             |DONE      |Manifest: NOSIGNATURE
+		cryonicconfig-forge-1.0.0+mc1.20.1.jar            |Cryonic Config                |cryonicconfig                 |1.0.0+mc1.20.1      |DONE      |Manifest: NOSIGNATURE
+		ImmediatelyFast-Forge-1.5.4+1.20.4.jar            |ImmediatelyFast               |immediatelyfast               |1.5.4+1.20.4        |DONE      |Manifest: NOSIGNATURE
+		coroutil-forge-1.20.1-1.3.7.jar                   |CoroUtil                      |coroutil                      |1.20.1-1.3.7        |DONE      |Manifest: NOSIGNATURE
+		ferritecore-6.0.1-forge.jar                       |Ferrite Core                  |ferritecore                   |6.0.1               |DONE      |Manifest: 41:ce:50:66:d1:a0:05:ce:a1:0e:02:85:9b:46:64:e0:bf:2e:cf:60:30:9a:fe:0c:27:e0:63:66:9a:84:ce:8a
+		PuzzlesLib-v8.1.33-1.20.1-Forge.jar               |Puzzles Lib                   |puzzleslib                    |8.1.33              |DONE      |Manifest: 9a:09:85:98:65:c4:8c:11:c5:49:f6:d6:33:23:39:df:8d:b4:ff:92:84:b8:bd:a5:83:9f:ac:7f:2a:d1:4b:6a
+		BadOptimizations-2.4.1-1.20.1.jar                 |BadOptimizations              |badoptimizations              |2.4.1               |DONE      |Manifest: NOSIGNATURE
+		cristellib-1.1.6-forge.jar                        |Cristel Lib                   |cristellib                    |1.1.6               |DONE      |Manifest: NOSIGNATURE
+	Crash Report UUID: 4b436496-57aa-4cff-a533-5be1aa931c8d
+	FML: 47.4
+	Forge: net.minecraftforge:47.4.10

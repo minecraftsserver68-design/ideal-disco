@@ -1,0 +1,25 @@
+
+[general]
+	#How long (in ticks) a player remains knocked before recovering. Default: 400 (20 seconds).
+	#Range: 100 ~ 1200
+	knockedDuration = 400
+	#How long (in ticks) it takes to execute a knocked player. Default: 60 (3 seconds).
+	#Range: 20 ~ 200
+	executionTime = 60
+	#If true, mobs can execute knocked players. Default: true.
+	mobExecutionEnabled = true
+	#List of entity ids allowed to execute knocked players.
+	#If empty, any hostile/aggro mob can execute.
+	#Example: ["minecraft:zombie", "modid:custom_mob"]
+	mobExecutionAllowlist = []
+	#Potion effects to apply while a player is knocked.
+	#Format: effect_id,duration,amplifier[,ambient][,visible][,showIcon]
+	#Example: ["minecraft:slowness,200,1", "minecraft:weakness,200,0,true,false,false"]
+	knockedPotionEffects = []
+	#If true, remove any potion effects not listed in knockedPotionEffects while knocked. Default: false.
+	removeOtherPotionEffectsWhileKnocked = false
+
+[damage_behavior]
+	#If true, Totems of Undying prevent entering the knocked state. Default: true.
+	totemPreventsKnockdown = true
+
